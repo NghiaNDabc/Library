@@ -10,7 +10,7 @@ using QuanLySachThuVien.Models;
 
 namespace QuanLySachThuVien.Areas.Admin.Controllers
 {
-    public class SachesController : Controller
+    public class BaoTriSachController : Controller
     {
         private QuanLySachThuVienContext db = new QuanLySachThuVienContext();
 

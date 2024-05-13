@@ -130,7 +130,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\SachesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BaoTriSachController.cs" />
     <Compile Include="Areas\Admin\Controllers\TestController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -180,11 +180,11 @@
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Test\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Saches\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\Saches\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\Saches\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\Saches\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Saches\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\BaoTriSach\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\BaoTriSach\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\BaoTriSach\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\BaoTriSach\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\BaoTriSach\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
