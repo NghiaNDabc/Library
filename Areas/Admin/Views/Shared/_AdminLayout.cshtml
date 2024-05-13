@@ -1,14 +1,60 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+<style>
+    /* Thiết lập chiều rộng cố định cho menu dọc */
+    .vertical-menu {
+        width: 250px; /* Độ rộng của menu */
+        height: 1000px;;
+        background-color: #E0E5F2; /* Màu nền */
+    }
+        /* Thiết lập màu nền và khoảng cách giữa các mục menu */
+        .vertical-menu a {
+            
+            margin:20px 0;
+            font-weight:bold;
+            padding: 15px 16px; /* Khoảng cách giữa các mục */
+            display: block; /* Hiển thị mỗi mục trên một dòng */
+            color: #212529; /* Màu chữ */
+            text-decoration: none; /* Gỡ bỏ đường gạch chân */
+            border-radius:30px;
+            border:1px solid black;
+        }
+            /* Tạo hiệu ứng hover khi di chuột vào các mục */
+            .vertical-menu a:hover {
+                background-color: #00ACE8;
+            }
+            .logo{
+                text-align:center;
+                background-color:red;
+                height:50px;
+                width:90%;
+                border-radius:20px;
+            }
+</style>
 </head>
+
 <body>
-    <h1>Admin</h1>
-    <div>
-        @RenderBody()
+    <div class="d-flex">
+        <div class="vertical-menu">
+            <div class="logo">Logo</div>
+            <a href="#" class="active">Trang chủ</a>
+            <a href="#">Bảo trì danh mục</a>
+            @Html.ActionLink("Bảo trì sách", "Index", "Saches")
+
+        </div>
+        <div>
+            @RenderBody();
+        </div>
     </div>
+        
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
 </body>
 </html>

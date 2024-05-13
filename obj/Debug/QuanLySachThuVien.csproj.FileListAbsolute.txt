@@ -77,3 +77,7 @@ C:\Users\HP\Desktop\Project\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj
 C:\Users\HP\Desktop\Project\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.CopyComplete
 C:\Users\HP\Desktop\Project\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.dll
 C:\Users\HP\Desktop\Project\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.pdb
+C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.dll
+C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.xml
+C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.SqlServer.xml
