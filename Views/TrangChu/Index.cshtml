@@ -1,0 +1,26 @@
+﻿@model IEnumerable<QuanLySachThuVien.Models.Sach>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sách nổi bật</h2>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4 col-mg-3 table-bordered">
+            @{
+                string path = "";
+            }
+            <img src=@Url.Content(path) class="img-thumbnail" width="150" />
+            <br />
+            @Html.DisplayFor(modelItem => item.tenSach)<br />
+            @Html.DisplayFor(modelItem => item.nhaXuatBan)<br />
+            @Html.DisplayFor(modelItem => item.giaTien)<br />
+             @Html.ActionLink("Xem chi tiết", "Details", new { id = item.maSach }) 
+        </div>
+    }
+</div>
+
+
