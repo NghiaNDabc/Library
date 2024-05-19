@@ -81,3 +81,7 @@ C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.dll
 C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.SqlServer.dll
 C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.xml
 C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\PagedList.dll
+C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\PagedList.Mvc.dll
+C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\PagedList.xml
+C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\PagedList.Mvc.xml
