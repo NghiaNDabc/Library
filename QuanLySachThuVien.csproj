@@ -169,6 +169,28 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Images\haui.jpg" />
+    <Content Include="Content\Images\logo-haui.png" />
+    <Content Include="Content\Images\s1.jpg" />
+    <Content Include="Content\Images\s10.jpg" />
+    <Content Include="Content\Images\s11.jpg" />
+    <Content Include="Content\Images\s12.jpg" />
+    <Content Include="Content\Images\s13.jpg" />
+    <Content Include="Content\Images\s14.jpg" />
+    <Content Include="Content\Images\s15.jpg" />
+    <Content Include="Content\Images\s16.jpg" />
+    <Content Include="Content\Images\s17.jpg" />
+    <Content Include="Content\Images\s18.jpg" />
+    <Content Include="Content\Images\s19.jpg" />
+    <Content Include="Content\Images\s2.jpg" />
+    <Content Include="Content\Images\s20.jpg" />
+    <Content Include="Content\Images\s3.jpg" />
+    <Content Include="Content\Images\s4.jpg" />
+    <Content Include="Content\Images\s5.jpg" />
+    <Content Include="Content\Images\s6.jpg" />
+    <Content Include="Content\Images\s7.jpg" />
+    <Content Include="Content\Images\s8.jpg" />
+    <Content Include="Content\Images\s9.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -213,6 +235,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\TrangChu\Details.cshtml" />
     <Content Include="Views\TrangChu\Index.cshtml" />
+    <Content Include="Views\TrangChu\XemSachTheoDM.cshtml" />
+    <Content Include="Views\TrangChu\TimKiem.cshtml" />
+    <Content Include="Views\TrangChu\ThemVaoGioHang.cshtml" />
+    <Content Include="Views\TrangChu\XemGioHang.cshtml" />
+    <Content Include="Views\TrangChu\XemALLSach.cshtml" />
+    <Content Include="Views\TrangChu\MuonSach.cshtml" />
+    <Content Include="Views\TrangChu\QuyDinh.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

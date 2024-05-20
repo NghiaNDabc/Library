@@ -1,36 +1,181 @@
 ﻿<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - My Library Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <style>
+        /* Kiểu cho các mục dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Kiểu cho menu dropdown */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 6px;
+        }
+
+            /* Kiểu cho các mục trong menu dropdown */
+            .dropdown-content a {
+                color: black;
+                margin: 0;
+                padding: 10px;
+                width: 200px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+        /* Hiển thị menu dropdown khi di chuột vào */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Hiển thị submenu khi di chuột vào mục con */
+        .dropdown-submenu:hover .dropdown-content {
+            display: block;
+            left: 100%;
+            top: 0;
+        }
+
+        /* Đảm bảo submenu nằm ngang bên phải của mục chính */
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+
+        footer p {
+            font-size: 13px;
+        }
+        .footer-site a:hover{
+            color:green;
+            font-weight:bold;
+        }
+       
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm ">
         <div class="container">
-            
-            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Trang chủ", "Index", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Danh mục", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Liên hệ", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Giới thiệu", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Trợ giúp", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Tài khoản", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                </ul>
-            </div>
+            <ul class="navbar-nav text-black w-100 d-flex justify-content-between align-items-center">
+                <li class="nav-item">
+                    <a href="@Url.Action("Index", "TrangChu")">
+                        <img src="~/Content/Images/logo-haui.png" width="50" style="margin-right: 10px;" />
+                    </a>
+                </li>
+                <li class="nav-item"><b>@Html.ActionLink("THƯ VIỆN SÁCH ĐIỆN TỬ", "Index", "TrangChu", new { area = "" }, new { @class = "nav-link" })</b></li>
+                <li class="nav-item flex-grow-1 d-flex justify-content-center">
+                    @using (Html.BeginForm("TimKiem", "TrangChu", FormMethod.Post))
+                    {
+                        <div class="justify-content-xxl-center">
+                            <input type="text" name="key" style="width:450px ;background-color: #F4E19D; border-radius: 50px; border-color: white; padding:3px 10px;" placeholder="Nhập từ khóa ...">
+                            <input type="submit" style="background-color: #0FC2C2; border-radius: 50px; width: 100px; border-color:white" value="Tìm kiếm" />
+
+                        </div>
+                    }
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    @{
+        QuanLySachThuVien.Models.QuanLySachThuVienContext db = new QuanLySachThuVien.Models.QuanLySachThuVienContext();
+        List<QuanLySachThuVien.Models.DanhMuc> liDM = db.DanhMucs.ToList();
+
+    }
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm " style="background-color: #D0CAF7;">
+        <div class="container">
+            <ul class="navbar-nav d-flex justify-content-center w-100 fw-bold text-black">
+                <li style="margin: 0px 10px">@Html.ActionLink("Trang chủ", "Index", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
+                <li style="margin: 0px 10px" class="nav-item">
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn nav-link">Danh mục</a>
+                        <div class="dropdown-content">
+                            @foreach (var item in liDM)
+                            {
+                                <a href="@Url.Action("XemSachTheoDM", "TrangChu", new {madm= item.maDanhMuc})">@item.tenDanhMuc</a>
+
+                            }
+                        </div>
+                    </div>
+                </li>
+                <li style="margin: 0px 10px">@Html.ActionLink("Liên hệ", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li style="margin: 0px 10px">@Html.ActionLink("Giới thiệu", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li style="margin: 0px 10px">@Html.ActionLink("Quy định", "QuyDinh", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
+                <li style="margin: 0px 10px">@Html.ActionLink("Tài khoản", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li style="margin: 0px 10px">@Html.ActionLink("Giỏ hàng", "XemGioHang", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
+            </ul>
+
         </div>
     </nav>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+
     </div>
 
+    <footer class="justify-content-center mt-5" style="background-color: #E0E5F2; padding: 20px 0 0 0; margin-bottom:-17px">
+        <div class="container">
+            <div class="row d-flex ">
+                <div class="col-md-4 d-flex">
+
+                    <a href="@Url.Action("Index", "TrangChu")">
+                        <img src="~/Content/Images/logo-haui.png" width="60" />
+                    </a>
+                    <div style="margin-left:20px">
+                        <h6>Bản đồ chỉ dẫn</h6>
+                        <p>Trường Đại học Công Nghiệp Hà Nội</p>
+                        <p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4104.211596772135!2d105.73267887888986!3d21.05365624180455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345457e292d5bf%3A0x20ac91c94d74439a!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1716090121600!5m2!1svi!2s"
+                                    width="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6>Trụ sở chính</h6>
+                    <p>Nhà A11 - Khu A, Phường Minh Khai, Quận Bắc Từ Liêm, Hà Nội</p>
+                    <h6>Các cơ sở khác</h6>
+                    <p>
+                        Cơ sở 2: Tầng 1,2 Nhà B8 - Khu B, Phường Tây Tựu, Quận Bắc Từ Liêm, Hà Nội<br />
+                        Cơ sở 3: Tầng 3 Nhà C18 - Khu C, Phường Lê Hồng Phong, Thành phố Phủ Lý, tỉnh Hà Nam
+                    </p>
+                </div>
+                <div class="col-md-4 footer-site">
+                    <h6>Liên kết site</h6>
+                    <ul>
+                        <li><a href="https://www.haui.edu.vn/vn" class="nav-link">Trường Đại học Công Nghiệp Hà Nội</a></li>
+                        <li><a href="@Url.Action("QuyDinh", "TrangChu")" class="nav-link">Quy định của thư viện</a></li>
+                        <li>
+                            <a href="https://ro-ro.facebook.com/LIC.HAUI.EDU.VN/" class="nav-link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li>@Html.ActionLink("Giới thiệu", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Trợ giúp", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div style="text-align:center;">
+            <p style="font-size:12px"><i>&copy; @DateTime.Now.Year - My HaUI Library Application</i></p>
+        </div>
+    </footer>
+
+    
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
