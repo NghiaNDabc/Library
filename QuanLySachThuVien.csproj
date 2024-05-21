@@ -53,6 +53,12 @@
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -171,8 +177,11 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Content Include="Content\Images\haui.jpg" />
     <Content Include="Content\Images\logo-haui.png" />
+=======
+>>>>>>> Nghia
     <Content Include="Content\Images\s1.jpg" />
     <Content Include="Content\Images\s10.jpg" />
     <Content Include="Content\Images\s11.jpg" />
@@ -193,9 +202,14 @@
     <Content Include="Content\Images\s7.jpg" />
     <Content Include="Content\Images\s8.jpg" />
     <Content Include="Content\Images\s9.jpg" />
+<<<<<<< HEAD
 =======
     <Content Include="Content\PageDangNhapCSS\style.css" />
 >>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b
+=======
+    <Content Include="Content\keyFrame.css" />
+    <Content Include="Content\PagedList.css" />
+>>>>>>> Nghia
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />

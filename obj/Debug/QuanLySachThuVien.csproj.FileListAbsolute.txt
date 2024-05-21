@@ -82,6 +82,7 @@ C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.SqlServer.dll
 C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.xml
 C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.SqlServer.xml
 <<<<<<< HEAD
+<<<<<<< HEAD
 D:\EDU\KÌ 2 2023-2024\TTCN\qLTV\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.AssemblyReference.cache
 D:\EDU\KÌ 2 2023-2024\TTCN\qLTV\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.CoreCompileInputs.cache
 D:\EDU\KÌ 2 2023-2024\TTCN\qLTV\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.dll
@@ -250,3 +251,9 @@ C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\obj\Debug\QuanLySa.D224E8C8.U
 C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.dll
 C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.pdb
 >>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b
+=======
+C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\PagedList.dll
+C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\PagedList.Mvc.dll
+C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\PagedList.xml
+C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\PagedList.Mvc.xml
+>>>>>>> Nghia

@@ -4,113 +4,290 @@
     ViewBag.Title = "Create";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
+    <meta charset="UTF-16">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{
+        font-family:Arial;
+    }
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .form-group label {
+        width: 150px;
+        margin-right: 10px; /* optional for spacing between label and input */
+    }
+    .form-group .form-control,
+    .form-group .form-control-file {
+        flex: 1;
+    }
+    .container {
+       /* background-color:red;*/
+        width:1300px;
+        margin-left: 10px;
+    }
+    .margin {
+        margin-right: 20px;
+    }
 
-<h2>Create</h2>
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 
-@using (Html.BeginForm()) 
-{
-    @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>Sach</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.maSach, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.maSach, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.maSach, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.maDanhMuc, "maDanhMuc", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("maDanhMuc", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.maDanhMuc, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.tenSach, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.tenSach, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.tenSach, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.hinhAnh, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.hinhAnh, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.hinhAnh, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.soTrang, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.soTrang, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.soTrang, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.moTa, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.moTa, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.moTa, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.soLuong, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.soLuong, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.soLuong, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.namXuatBan, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.namXuatBan, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.namXuatBan, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.nhaXuatBan, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.nhaXuatBan, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.nhaXuatBan, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.giaTien, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.giaTien, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.giaTien, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.tenTacGia, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.tenTacGia, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.tenTacGia, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </div>
-    </div>
-}
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
+    input[type=number] {
+        -moz-appearance: textfield; /* Firefox */
+    }
+    #successPopup{
+        position:fixed;
+        top:0;
+    }
+@*//new { enctype = "multipart/form-data"*@
+</style>
+<div id="successPopup"  class="alert alert-success"style="display: none;">
+   <span id="successMessage"></span>
 </div>
+
+<!-- Popup or div for error message -->
+<div id="errorPopup" class="alert alert-success" style="display: none;">
+    Lỗi: <span id="errorMessage"></span>
+</div>
+<div>
+    <a href="@Url.Action("Index")" class="btn btn-success">
+        <i class="fas fa-arrow-left mr-2"></i> Trở về
+    </a>
+</div>
+<hr />
+<div class="form-group d-flex row container">
+    <div class="col-md-offset-2 col-md-10">
+        <button id="clearButton" class="btn btn-default btn-secondary">Nhập lại</button>
+    </div>
+</div>
+<div class="container">
+    @using (Html.BeginForm("Create", "BaoTriSach", FormMethod.Post, new { enctype = "multipart/form-data", acceptcharset = "UTF-16" ,id="myForm"}))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @*<div class="form-group">
+                    @Html.LabelFor(model => model.maSach, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.maSach, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.maSach, "", new { @class = "text-danger" })
+                    </div>
+                </div>*@
+
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.maDanhMuc, "Danh mục", htmlAttributes: new { @class = "control-label" })
+                <div class="col-md-10">
+                    @Html.DropDownList("maDanhMuc", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.maDanhMuc, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.tenSach, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.tenSach, new { htmlAttributes = new { @class = "form-control", @id = "tenSach" } })
+                    @Html.ValidationMessageFor(model => model.tenSach, "", new { @class = "text-danger", @id = "tenSachError" })
+                </div>
+            </div>
+
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.hinhAnh, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <img id="output" src="~/Content/Images/noImage.jpg" alt="Ảnh" width="180" />
+                    @Html.ValidationMessageFor(model => model.tenSach, "", new { @class = "text-danger", @id = "hinhAnhError" })
+                    <input name="imgfile" id="ufile" type="file" onchange="loadF(event)" />
+
+                </div>
+            </div>
+
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.soTrang, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.soTrang, new { htmlAttributes = new { @class = "form-control", @id = "soTrang" } })
+                    @Html.ValidationMessageFor(model => model.soTrang, "", new { @class = "text-danger", @id = "soTrangError" })
+                </div>
+            </div>
+
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.moTa, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.moTa, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.moTa, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.soLuong, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.soLuong, new { htmlAttributes = new { @class = "form-control", @id = "soLuong" } })
+                    @Html.ValidationMessageFor(model => model.soLuong, "", new { @class = "text-danger", @id = "soLuongError" })
+                </div>
+            </div>
+
+            <div class="form-group d-flex row ">
+                @Html.LabelFor(model => model.namXuatBan, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.namXuatBan, new { htmlAttributes = new { @class = "form-control", @id = "namXuatBan" } })
+                    @Html.ValidationMessageFor(model => model.namXuatBan, "", new { @class = "text-danger", @id = "namXuatBanError" })
+                </div>
+            </div>
+
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.nhaXuatBan, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.nhaXuatBan, new { htmlAttributes = new { @class = "form-control", @id = "nhaXuatBan" } })
+                    @Html.ValidationMessageFor(model => model.nhaXuatBan, "", new { @class = "text-danger", @id = "nhaXuatBanError" })
+                </div>
+            </div>
+
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.giaTien, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.giaTien, new { htmlAttributes = new { @class = "form-control", @id = "giaTien" } })
+                    @Html.ValidationMessageFor(model => model.giaTien, "", new { @class = "text-danger", @id = "giaTienError" })
+                </div>
+            </div>
+
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.tenTacGia, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.tenTacGia, new { htmlAttributes = new { @class = "form-control", @id = "tenTacGia" } })
+                    @Html.ValidationMessageFor(model => model.tenTacGia, "", new { @class = "text-danger", @id = "tenTacGiaError" })
+                </div>
+            </div>
+
+            <div class="form-group d-flex row">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Thêm sách mới" id="addButton" class="btn btn-default btn-primary" style="background-color: #00ACE8 !important;" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    var loadF = function (event) {
+        var img = document.getElementById('output');
+        img.src = URL.createObjectURL(event.target.files[0]);
+    };
+</script>
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#clearButton').click(function () {
+            // Xóa giá trị của tất cả các input
+            $('input[type="text"]').val('');
+            $('input[type="file"]').val('');
+            $('select').val('');
+            $('textarea').val('');
+            // Xóa giá trị của tất cả các input number
+            $('input[type="number"]').each(function () {
+                $(this).val(0);
+            });
+            $('#output').attr('src', '/Content/Images/noImage.jpg');    
+        });
+
+    $('#addButton').click(function (e) {
+        //e.preventDefault();
+        var isValid = true;
+
+        // Kiểm tra ô input tên sách
+        if ($('#tenSach').val() === '') {
+            $('#tenSachError').text('Vui lòng nhập tên sách.');
+            isValid = false;
+        } else {
+            $('#tenSachError').text('');
+        }
+        if ($('#soTrang').val() === '') {
+            $('#soTrangError').text('Vui lòng nhập số trang.');
+            isValid = false;
+        } else {
+            $('#soTrangError').text('');
+        }
+        if ($('#soLuong').val() === '') {
+            $('#soLuongError').text('Vui lòng nhập số lượng');
+            isValid = false;
+        } else {
+            $('#soLuongError').text('');
+        }
+        if ($('#namXuatBan').val() === '') {
+            $('#namXuatBanError').text('Vui lòng nhập năm xuất bản.');
+            isValid = false;
+        } else {
+            $('#namXuatBanError').text('');
+        }
+        if ($('#nhaXuatBan').val() === '') {
+            $('#nhaXuatBanError').text('Vui lòng nhập nhà xuất bản.');
+            isValid = false;
+        } else {
+            $('#nhaXuatBanError').text('');
+        }
+        if ($('#giaTien').val() === '') {
+            $('#giaTienError').text('Vui lòng nhập giá tiền.');
+            isValid = false;
+        } else {
+            $('#giaTienError').text('');
+        }
+        if ($('#tenTacGia').val() === '') {
+            $('#tenTacGiaError').text('Vui lòng nhập tên tác giả.');
+            isValid = false;
+        } else {
+            $('#tenTacGiaError').text('');
+        }
+        if ($('#ufile').val() === '') {
+            $('#hinhAnhError').text('Vui lòng chọn ảnh.');
+            isValid = false;
+        } else {
+            $('#hinhAnhError').text('');
+        }
+        var formData = new FormData($('#myForm')[0]);
+        if (isValid == true) {
+            $.ajax({
+                url: '@Url.Action("Create", "BaoTriSach")',
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    if (response.success) {
+                        // Show success message in popup or div
+                        $('#successMessage').text(response.message);
+                        $('#successPopup').fadeIn();
+                        setTimeout(function () {
+                            $('#successPopup').fadeOut();
+                        }, 2000);
+                        // $('#successPopup').show(); // Show popup or div
+                    } else {
+                        // Show error message in popup or div
+                        $('#errorMessage').text(response.message);
+                        $('#errorPopup').fadeIn().delay(2000).fadeOut(); 
+                        // Show popup or div
+                    }
+                },
+                error: function () {
+                    // Handle AJAX error
+                    $('#errorMessage').text("Có lỗi xảy ra khi thêm sách. Vui lòng thử lại sau.");
+                    $('#errorPopup').fadeIn().delay(2000).fadeOut(); // Show popup or div
+                }
+            });
+        } else {
+            e.preventDefault(); 
+        };
+        return false; // Ngăn chặn hành động mặc định của nút
+    });
+});
+
+</script>
+
+<!-- Your HTML form and other elements -->
+<!-- Popup or div for success message -->
