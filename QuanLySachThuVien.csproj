@@ -137,8 +137,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\BaoTriSachController.cs" />
-    <Compile Include="Areas\Admin\Controllers\TestController.cs" />
+    <Compile Include="Controllers\DangNhapController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TrangChuController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -149,6 +150,7 @@
     <Compile Include="Models\DanhMuc.cs" />
     <Compile Include="Models\GioHang.cs" />
     <Compile Include="Models\KhaoSat.cs" />
+    <Compile Include="Models\mapTaiKhoan.cs" />
     <Compile Include="Models\NguoiDung.cs" />
     <Compile Include="Models\PhieuMuon.cs" />
     <Compile Include="Models\PhieuTra.cs" />
@@ -174,6 +176,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <Content Include="Content\Images\haui.jpg" />
+    <Content Include="Content\Images\logo-haui.png" />
+=======
+>>>>>>> Nghia
     <Content Include="Content\Images\s1.jpg" />
     <Content Include="Content\Images\s10.jpg" />
     <Content Include="Content\Images\s11.jpg" />
@@ -194,8 +202,14 @@
     <Content Include="Content\Images\s7.jpg" />
     <Content Include="Content\Images\s8.jpg" />
     <Content Include="Content\Images\s9.jpg" />
+<<<<<<< HEAD
+=======
+    <Content Include="Content\PageDangNhapCSS\style.css" />
+>>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b
+=======
     <Content Include="Content\keyFrame.css" />
     <Content Include="Content\PagedList.css" />
+>>>>>>> Nghia
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -224,6 +238,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\DangNhap\DangNhap.cshtml" />
+    <None Include="Views\TrangChu\Details.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -238,10 +254,24 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\TrangChu\Details.cshtml" />
+    <Content Include="Views\TrangChu\Index.cshtml" />
+    <Content Include="Views\TrangChu\XemSachTheoDM.cshtml" />
+    <Content Include="Views\TrangChu\TimKiem.cshtml" />
+    <Content Include="Views\TrangChu\ThemVaoGioHang.cshtml" />
+    <Content Include="Views\TrangChu\XemGioHang.cshtml" />
+    <Content Include="Views\TrangChu\XemALLSach.cshtml" />
+    <Content Include="Views\TrangChu\MuonSach.cshtml" />
+    <Content Include="Views\TrangChu\QuyDinh.cshtml" />
+=======
+    <Content Include="Views\TrangChu\Index.cshtml" />
+>>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Views\TrangChu\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

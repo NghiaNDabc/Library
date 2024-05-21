@@ -3,7 +3,7 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <link href="~/Content/keyFrame.css" rel="stylesheet" />
 <link href="~/Content/PagedList.css" rel="stylesheet" />
@@ -29,10 +29,52 @@
         align-items: center;
     }
 
+<<<<<<< HEAD
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DanhMuc.tenDanhMuc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tenSach)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hinhAnh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.soTrang)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.moTa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.soLuong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.namXuatBan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nhaXuatBan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.giaTien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tenTacGia)
+        </th>
+        <th></th>
+    </tr>
+=======
         .btn-them a {
             display: block;
             line-height: 100%;
         }
+>>>>>>> Nghia
 
     .btn-xoa {
         display: flex;
