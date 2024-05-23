@@ -1,0 +1,108 @@
+﻿@model IEnumerable<QuanLySachThuVien.Models.Sach>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>
+
+    <label style="color: green; font-weight:bold; font-size:35px;">|</label>
+    Sách nổi bật
+
+</h2>
+<hr />
+<div class="row">
+    @foreach (var item in Model)
+    {
+        if (item.soLuong > 20&&item.maDanhMuc!="DM002")
+        {
+            <div class="col-sm-6 col-md-4 col-lg-3 table-bordered p-3 mb-3">
+                @{
+                    string path = "~/Content/Images/" + item.hinhAnh;
+                }
+                <a href="@Url.Action( "Details", "TrangChu",  new { id = item.maSach })">
+                    <img src=@Url.Content(path) class="img-thumbnail" width="150" />
+                </a>
+                <br />
+                <b>Tên sách: </b>@Html.DisplayFor(modelItem => item.tenSach)<br />
+                <b>NXB: </b>@Html.DisplayFor(modelItem => item.nhaXuatBan)<br />
+                @{
+                    decimal giatien = (decimal)item.giaTien;
+                    string giaTienFormatted = giatien.ToString("#,##0") + " VND";
+                }
+                <b>Giá tiền: </b>@giaTienFormatted<br />
+                @*@Html.ActionLink("Xem chi tiết", "Details", new { id = item.maSach })*@
+            </div>
+        }
+
+    }
+</div>
+<h2>
+
+    <label style="color: green; font-weight:bold; font-size:35px;">|</label>
+    Sách mới
+
+</h2>
+<hr />
+<div class="row">
+    @foreach (var item in Model)
+    {
+        if (item.namXuatBan > 2010)
+        {
+            <div class="col-sm-6 col-md-4 col-lg-3 table-bordered p-3 mb-3">
+                @{
+                    string path = "~/Content/Images/" + item.hinhAnh;
+                }
+                <a href="@Url.Action( "Details", "TrangChu",  new { id = item.maSach })">
+                    <img src=@Url.Content(path) class="img-thumbnail" width="150" />
+                </a>
+                <br />
+                <b>Tên sách: </b>@Html.DisplayFor(modelItem => item.tenSach)<br />
+                <b>NXB: </b>@Html.DisplayFor(modelItem => item.nhaXuatBan)<br />
+                @{
+                    decimal giatien = (decimal)item.giaTien;
+                    string giaTienFormatted = giatien.ToString("#,##0") + " VND";
+                }
+                <b>Giá tiền: </b>@giaTienFormatted<br />
+               
+            </div>
+        }
+
+    }
+</div>
+<h2>
+
+    <label style="color: green; font-weight:bold; font-size:35px;">|</label>
+    Sách giáo trình
+
+</h2>
+<hr />
+<div class="row">
+    @foreach (var item in Model)
+    {
+        if (item.maDanhMuc == "DM002")
+        {
+            <div class="col-sm-6 col-md-4 col-lg-3 table-bordered p-3 mb-3">
+                @{
+                    string path = "~/Content/Images/" + item.hinhAnh;
+                }
+                <a href="@Url.Action( "Details", "TrangChu",  new { id = item.maSach })">
+                    <img src=@Url.Content(path) class="img-thumbnail" width="150" />
+                </a>
+                <br />
+                <b>Tên sách: </b>@Html.DisplayFor(modelItem => item.tenSach)<br />
+                <b>NXB: </b>@Html.DisplayFor(modelItem => item.nhaXuatBan)<br />
+                @{
+                    decimal giatien = (decimal)item.giaTien;
+                    string giaTienFormatted = giatien.ToString("#,##0") + " VND";
+                }
+                <b>Giá tiền: </b>@giaTienFormatted<br />
+                
+            </div>
+        }
+
+    }
+</div>
+
+

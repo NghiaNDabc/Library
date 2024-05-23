@@ -1,0 +1,58 @@
+﻿@model QuanLySachThuVien.Models.Sach
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Chi tiết sách</h2>
+<hr />
+<label style="color: green; font-size: 20px"><b>>> </b></label>
+<label style="font-size:20px"><b>@Html.DisplayFor(model => model.DanhMuc.tenDanhMuc)</b></label>
+
+<div>
+    <table style="margin-top: 15px">
+        <tr>
+            <td style="vertical-align: top">
+                @{
+                    string path = "~/Content/Images/" + Model.hinhAnh;
+                }
+                <img src="@Url.Content(path)" width="180" style="margin-left: 15px; margin-top:0" />
+            </td>
+            <td style="vertical-align: top">
+                <div style="margin-left: 15px; margin-top:0">
+                    <p>
+                        <b>Mã sách:</b>  <i>@Html.DisplayFor(model => model.maSach)</i>
+                    </p>
+                    <p>
+                        <b>Tên sách:</b>  @Html.DisplayFor(model => model.tenSach)
+                    </p>
+                    <p><b>Tác giả:</b> @Html.DisplayFor(model => model.tenTacGia) </p>
+                    <p><b>Số trang: </b>@Html.DisplayFor(model => model.soTrang) </p>
+                    <p><b>NXB:</b> @Html.DisplayFor(model => model.nhaXuatBan) </p>
+                    <p><b>Năm xuất bản:</b> @Html.DisplayFor(model => model.namXuatBan) </p>
+                    @{
+                        decimal giatien = (decimal)Model.giaTien;
+                        string giaTienFormatted = giatien.ToString("#,##0") + " VND";
+                    }
+
+                    <p><b>Giá tiền: </b> @giaTienFormatted</p>
+                </div>
+
+            </td>
+            <td style="vertical-align: top">
+                <a href="@Url.Action("ThemVaoGioHang", "TrangChu", new {maSach= Model.maSach})" class="btn" role="button" style="background-color: #0FC2C2; font-weight:bold; color: white; border-radius:30px; height:50px; width:200px; margin-left: 35px">Thêm vào giỏ hàng</a>
+
+            </td>
+        </tr>
+    </table>
+</div>
+<br />
+<div>
+    <p style="font-size: 20px"><b>Tóm tắt nội dung</b></p>
+    <p>Đây là cuốn sách hay : )</p>
+</div>
+
+<a href="@Url.Action("Index", "TrangChu")" class="btn" role="button" style="font-weight:bold; padding:10px; border: 2px solid; width:180px;">Trở về</a>
+
+

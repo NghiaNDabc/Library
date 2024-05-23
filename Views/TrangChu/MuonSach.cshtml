@@ -1,0 +1,109 @@
+﻿@using QuanLySachThuVien.Models
+@model IEnumerable<QuanLySachThuVien.Models.ChiTietGioHang>
+@{
+    ViewBag.Title = "MuonSach";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@{
+    QuanLySachThuVienContext db = new QuanLySachThuVienContext();
+    List<Sach> saches = db.Saches.ToList();
+    string thanhtienFormatted = "";
+    decimal thanhtien = 0;
+    int i = 1;
+}
+<h3>
+
+    <label style="color: green; font-weight:bold; font-size:35px;">|</label>
+    Mượn sách
+</h3>
+@using (Html.BeginForm("DatMuon", "TrangChu"))
+{
+    <div class="d-flex w-100">
+        <table class="w-50">
+            <tr>
+                <td style="width:150px">Mã người dùng:</td>
+                <td><input type="text" name="maND" style="width:250px; height: 35px" /></td>
+            </tr>
+            <tr class="w-75">
+                <td>SDT:</td>
+                <td><input type="text" name="sdt" style="width: 250px; height: 35px" /></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email" style="width: 250px; height: 35px" /></td>
+            </tr>
+        </table>
+        <table class="w-50">
+            <tr>
+                <td style="width:150px"> Ngày trả:</td>
+                <td><input type="text" name="ngayTra" style="width: 250px; height: 35px" /></td>
+            </tr>
+            <tr>
+                <td> Ghi chú:</td>
+                <td><input type="text" name="ghiChu" height="80" style="width:250px; height: 100px; margin-top: 2px" /></td>
+            </tr>
+
+        </table>
+    </div>
+
+}
+
+<div>
+    @if (Model!= null && Model.Any())
+    {
+        <table style="margin-top: 15px;" class="table">
+            <tr>
+                <th>STT</th>
+                <th>Mã sách</th>
+                <th>Tên sách</th>
+                <th>Số lượng</th>
+                <th>Hình ảnh</th>
+                <th>Đơn giá</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                Sach s = db.Saches.FirstOrDefault(sa => sa.maSach == item.maSach);
+
+                <tr>
+                    <td>@i</td>
+                    <td>@Html.DisplayFor(model => s.maSach)</td>
+                    <td>@Html.DisplayFor(model => s.tenSach)</td>
+                    <td>
+                        @Html.DisplayFor(model => item.soLuong)
+                    <td>
+                        @{
+                            string path = "~/Content/Images/" + s.hinhAnh;
+                        }
+                        <img src="@Url.Content(path)" width="150" class="img-thumbnail" />
+                    </td>
+                    @{
+                        i++;
+                        var tt = item.soLuong * s.giaTien;
+                        thanhtien += Convert.ToDecimal(tt);
+                        decimal giatien = (decimal)s.giaTien;
+                        string giaTienFormatted = giatien.ToString("#,##0") + " VND";
+                        thanhtienFormatted = thanhtien.ToString("#,##0") + " VND";
+                    }
+                    <td>@giaTienFormatted</td>
+                </tr>
+
+            }
+
+
+
+
+        </table>
+        <p style="float: right; margin-right: 10px"><b>Thành tiền: </b><span style="font-weight:bold; color:red;">@thanhtienFormatted</span></p>
+        <br />
+        <br />
+        <a href="@Url.Action("XemAllSach", "TrangChu")" class="btn righ" role="button" style="font-weight: bold; padding: 10px; border: 2px solid; width: 180px; color: #0FC2C2; float:right ">Mượn sách ngay</a>
+        <br /><br />
+    }
+    else { }
+
+</div>
+
+

@@ -53,6 +53,12 @@
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -133,6 +139,7 @@
     <Compile Include="Areas\Admin\Controllers\BaoTriSachController.cs" />
     <Compile Include="Areas\Admin\Controllers\TestController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TrangChuController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -168,6 +175,29 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Images\haui.jpg" />
+    <Content Include="Content\Images\logo-haui.png" />
+    <Content Include="Content\Images\s1.jpg" />
+    <Content Include="Content\Images\s10.jpg" />
+    <Content Include="Content\Images\s11.jpg" />
+    <Content Include="Content\Images\s12.jpg" />
+    <Content Include="Content\Images\s13.jpg" />
+    <Content Include="Content\Images\s14.jpg" />
+    <Content Include="Content\Images\s15.jpg" />
+    <Content Include="Content\Images\s16.jpg" />
+    <Content Include="Content\Images\s17.jpg" />
+    <Content Include="Content\Images\s18.jpg" />
+    <Content Include="Content\Images\s19.jpg" />
+    <Content Include="Content\Images\s2.jpg" />
+    <Content Include="Content\Images\s20.jpg" />
+    <Content Include="Content\Images\s3.jpg" />
+    <Content Include="Content\Images\s4.jpg" />
+    <Content Include="Content\Images\s5.jpg" />
+    <Content Include="Content\Images\s6.jpg" />
+    <Content Include="Content\Images\s7.jpg" />
+    <Content Include="Content\Images\s8.jpg" />
+    <Content Include="Content\Images\s9.jpg" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -181,8 +211,6 @@
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Test\Index.cshtml" />
     <Content Include="Areas\Admin\Views\BaoTriSach\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\BaoTriSach\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\BaoTriSach\Details.cshtml" />
     <Content Include="Areas\Admin\Views\BaoTriSach\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\BaoTriSach\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -210,6 +238,15 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\TrangChu\Details.cshtml" />
+    <Content Include="Views\TrangChu\Index.cshtml" />
+    <Content Include="Views\TrangChu\XemSachTheoDM.cshtml" />
+    <Content Include="Views\TrangChu\TimKiem.cshtml" />
+    <Content Include="Views\TrangChu\ThemVaoGioHang.cshtml" />
+    <Content Include="Views\TrangChu\XemGioHang.cshtml" />
+    <Content Include="Views\TrangChu\XemALLSach.cshtml" />
+    <Content Include="Views\TrangChu\MuonSach.cshtml" />
+    <Content Include="Views\TrangChu\QuyDinh.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

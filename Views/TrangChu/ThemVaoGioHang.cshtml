@@ -1,0 +1,106 @@
+﻿@model IEnumerable<QuanLySachThuVien.Models.Sach>
+@using QuanLySachThuVien.Models
+@{
+    ViewBag.Title = "ThemVaoGioHang";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    List<ChiTietGioHang> li = (List<ChiTietGioHang>)Session["giohang"];
+    QuanLySachThuVienContext db = new QuanLySachThuVienContext();
+    List<Sach> saches = db.Saches.ToList();
+    int sl = 0;
+    string thanhtienFormatted = "";
+
+    decimal thanhtien = 0;
+
+    foreach (var ct in li)
+    {
+        sl += (int)ct.soLuong;
+        var sach = db.Saches.FirstOrDefault(sa => sa.maSach == ct.maSach);
+
+    }
+}
+
+
+<h3>
+
+    <label style="color: green; font-weight:bold; font-size:35px;">|</label>
+    Giỏ hàng
+    <span style="border-radius: 80px; background-color:black;">
+        <label style="color: white; text-align: center; width: 38px;">@sl</label>
+    </span>
+</h3>
+<div class="d-flex">
+    <div class="w-50" style="margin-right: 150px">
+        @*@ViewBag.ma*@
+        @if (li != null)
+        {
+            <table style="margin-top: 15px;" class="table">
+                @foreach (var item in li)
+                {
+                    Sach s = db.Saches.FirstOrDefault(sa => sa.maSach == item.maSach);
+                    <tr>
+                        <td>
+                            @{
+                                string path = "~/Content/Images/" + s.hinhAnh;
+                            }
+                            <img src="@Url.Content(path)" width="150" style="margin-left: 15px;" class="img-thumbnail" />
+                        </td>
+                        <td style="vertical-align:top">
+                            <div style="margin-left: 15px; margin-top:0">
+                                <p>
+                                    <b>Mã sách:</b>  <i>@Html.DisplayFor(model => s.maSach)</i>
+                                </p>
+                                <p>
+                                    <b>Tên sách:</b>  @Html.DisplayFor(model => s.tenSach)
+                                </p>
+                                <p><b>Tác giả:</b> @Html.DisplayFor(model => s.tenTacGia) </p>
+                                @{
+                                    var tt = item.soLuong * s.giaTien;
+                                    thanhtien += Convert.ToDecimal(tt);
+                                    decimal giatien = (decimal)s.giaTien;
+                                    string giaTienFormatted = giatien.ToString("#,##0") + " VND";
+                                }
+
+                                <p><b>Giá tiền: </b> @giaTienFormatted</p>
+                                <p><b>Số lượng: </b>@Html.DisplayFor(model => item.soLuong)</p>
+                            </div>
+
+                        </td>
+                        <td style="vertical-align: top">
+                            <a href="@Url.Action("XoaSanPham", "TrangChu", new {maSach= item.maSach})" class="btn" role="button" style="font-weight:bold; color:red; margin-top: -5px; margin-left:10px; font-size: 20px">X</a>
+
+                        </td>
+                    </tr>
+
+                }
+            </table>
+        }
+        else
+        {
+            <p style="font-weight: bold; text-align: center; font-size: 20px">Giỏ sách của bạn đang rỗng !</p>
+        }
+
+
+    </div>
+    @{ 
+        thanhtienFormatted = thanhtien.ToString("#,##0") + " VND";
+
+    }
+    <div class="w-20">
+        <h3>Tóm tắt giỏ sách</h3>
+        <p>
+            <b>Thành tiền:</b>
+            <span style="color: red">@thanhtienFormatted</span>
+        </p>
+        <a href="@Url.Action("MuonSach", "TrangChu")" class="btn" role="button" style="font-weight:bold; padding:10px; border: 2px solid; width:180px;">Mượn sách</a>
+        <br />
+        <span style="color: red; font-weight: bold; font-size:12px">(Lưu ý: Sử dụng ứng dụng Bookworm để xem đầy đủ tài liệu. <br />Bạn đọc có thể tải Bookworm từ App Store hoặc Google play với <br />từ khóa "Libol Bookworm”)</span>
+</div>
+    <br />
+
+</div>
+<br />
+<a href="@Url.Action("XemAllSach", "TrangChu")" class="btn" role="button" style="font-weight:bold; padding:10px; border: 2px solid; width:180px;">Tiếp tục xem sách</a>
+
