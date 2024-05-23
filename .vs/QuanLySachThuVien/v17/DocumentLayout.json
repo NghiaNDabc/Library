@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\EDU\\K\u00CC 2 2023-2024\\TTCN\\qLTV\\QuanLySachThuVien\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|D:\\EDU\\K\u00CC 2 2023-2024\\TTCN\\qLTV\\QuanLySachThuVien\\views\\trangchu\\xemgiohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|d:\\edu\\k\u00EC 2 2023-2024\\ttcn\\qltv\\quanlysachthuvien\\views\\trangchu\\xemgiohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|solutionrelative:views\\trangchu\\xemgiohang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|d:\\edu\\k\u00EC 2 2023-2024\\ttcn\\qltv\\quanlysachthuvien\\views\\trangchu\\quydinh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|D:\\EDU\\K\u00CC 2 2023-2024\\TTCN\\qLTV\\QuanLySachThuVien\\views\\trangchu\\quydinh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|solutionrelative:views\\trangchu\\quydinh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -27,15 +27,15 @@
       "RelativeMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|solutionrelative:views\\trangchu\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|d:\\edu\\k\u00EC 2 2023-2024\\ttcn\\qltv\\quanlysachthuvien\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|D:\\EDU\\K\u00CC 2 2023-2024\\TTCN\\qLTV\\QuanLySachThuVien\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|d:\\edu\\k\u00EC 2 2023-2024\\ttcn\\qltv\\quanlysachthuvien\\views\\trangchu\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|D:\\EDU\\K\u00CC 2 2023-2024\\TTCN\\qLTV\\QuanLySachThuVien\\views\\trangchu\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|solutionrelative:views\\trangchu\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|d:\\edu\\k\u00EC 2 2023-2024\\ttcn\\qltv\\quanlysachthuvien\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|D:\\EDU\\K\u00CC 2 2023-2024\\TTCN\\qLTV\\QuanLySachThuVien\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{46555D73-067D-4FF2-8BAB-504E7B0DBD68}|QuanLySachThuVien.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -75,8 +75,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-20T18:05:39.493Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -92,8 +91,7 @@
               "RelativeToolTip": "Views\\TrangChu\\QuyDinh.cshtml",
               "ViewState": "AQIAACcAAAAAAAAAAAAowCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-20T18:18:51.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T18:18:51.824Z"
             },
             {
               "$type": "Document",
@@ -105,8 +103,7 @@
               "RelativeToolTip": "Views\\Home\\Contact.cshtml",
               "ViewState": "AQIAACAAAAAAAAAAAIAwwCkAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-19T09:56:19.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T09:56:19.304Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAFoAAAAAAAAAAAAAAHUAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-17T03:39:04.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T03:39:04.371Z"
             },
             {
               "$type": "Document",
@@ -131,8 +127,7 @@
               "RelativeToolTip": "Views\\TrangChu\\ThemVaoGioHang.cshtml",
               "ViewState": "AQIAABUAAAAAAAAAAAAAACYAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-19T11:42:56.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T11:42:56.86Z"
             },
             {
               "$type": "Document",
@@ -142,7 +137,7 @@
               "RelativeDocumentMoniker": "Views\\TrangChu\\XemGioHang.cshtml",
               "ToolTip": "D:\\EDU\\K\u00CC 2 2023-2024\\TTCN\\qLTV\\QuanLySachThuVien\\Views\\TrangChu\\XemGioHang.cshtml",
               "RelativeToolTip": "Views\\TrangChu\\XemGioHang.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAAhAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-19T13:23:56.688Z",
               "EditorCaption": ""
@@ -157,8 +152,7 @@
               "RelativeToolTip": "Views\\TrangChu\\Index.cshtml",
               "ViewState": "AQIAAEgAAAAAAAAAAAAAAEkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-17T03:36:35.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T03:36:35.042Z"
             },
             {
               "$type": "Document",
@@ -170,8 +164,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T18:17:54.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T18:17:54.887Z"
             },
             {
               "$type": "Document",
@@ -183,8 +176,7 @@
               "RelativeToolTip": "Views\\TrangChu\\Details.cshtml",
               "ViewState": "AQIAAAcAAAAAAAAAAAAowCQAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-17T03:38:20.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T03:38:20.441Z"
             },
             {
               "$type": "Document",
@@ -196,8 +188,7 @@
               "RelativeToolTip": "Controllers\\TrangChuController.cs",
               "ViewState": "AQIAAIIAAAAAAAAAAAAqwIkAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T03:34:36.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T03:34:36.231Z"
             },
             {
               "$type": "Document",
