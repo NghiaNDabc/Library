@@ -4,9 +4,15 @@
     ViewBag.Title = "Create";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
+<<<<<<< HEAD
 <meta charset="UTF-16">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+=======
+    <meta charset="UTF-16">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
 <style>
     body{
         font-family:Arial;
@@ -48,8 +54,13 @@
     }
 @*//new { enctype = "multipart/form-data"*@
 </style>
+<<<<<<< HEAD
 <div id="successPopup" class="alert alert-success" style="display: none;">
     <span id="successMessage"></span>
+=======
+<div id="successPopup"  class="alert alert-success"style="display: none;">
+   <span id="successMessage"></span>
+>>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
 </div>
 
 <!-- Popup or div for error message -->
@@ -68,7 +79,11 @@
     </div>
 </div>
 <div class="container">
+<<<<<<< HEAD
     @using (Html.BeginForm("Create", "BaoTriSach", FormMethod.Post, new { enctype = "multipart/form-data", acceptcharset = "UTF-16", id = "myForm" }))
+=======
+    @using (Html.BeginForm("Create", "BaoTriSach", FormMethod.Post, new { enctype = "multipart/form-data", acceptcharset = "UTF-16" ,id="myForm"}))
+>>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
     {
         @Html.AntiForgeryToken()
 
@@ -194,7 +209,11 @@
             $('input[type="number"]').each(function () {
                 $(this).val(0);
             });
+<<<<<<< HEAD
             $('#output').attr('src', '/Content/Images/noImage.jpg');
+=======
+            $('#output').attr('src', '/Content/Images/noImage.jpg');    
+>>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
         });
 
     $('#addButton').click(function (e) {
@@ -270,7 +289,11 @@
                     } else {
                         // Show error message in popup or div
                         $('#errorMessage').text(response.message);
+<<<<<<< HEAD
                         $('#errorPopup').fadeIn().delay(2000).fadeOut();
+=======
+                        $('#errorPopup').fadeIn().delay(2000).fadeOut(); 
+>>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
                         // Show popup or div
                     }
                 },
@@ -281,7 +304,11 @@
                 }
             });
         } else {
+<<<<<<< HEAD
             e.preventDefault();
+=======
+            e.preventDefault(); 
+>>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
         };
         return false; // Ngăn chặn hành động mặc định của nút
     });
