@@ -8,8 +8,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="~/Content/PageDangNhapCSS/style.css">
-    <title>Đăng nhập</title>
+    <title>Quản lý thư viện - Đăng nhập</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(31, 58, 74);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 600px;
+            background-color: #F8F7F7;
+            border-radius: 20px;
+        }
+
+        h1 {
+            margin: 20px;
+            font-size: 54px;
+            font-weight: bold;
+        }
+
+        h1, .label-input {
+            color: #2B3674;
+        }
+
+        .input-form {
+            margin: 30px 0 0 20px;
+        }
+
+        .label-input {
+            font-size: 20px;
+        }
+
+        input {
+            width: 460px;
+            height: 60px;
+            border-radius: 50px;
+            border: solid #C4B7B7 1px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            padding: 0 20px;
+            font-size: 20px;
+        }
+
+        .submit-button {
+            margin: 30px 0 0 20px;
+        }
+
+        button {
+            background-color: #00ACE8;
+            width: 460px;
+            height: 50px;
+            border-radius: 16px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+            button:hover {
+                cursor: pointer;
+                background-color: pink;
+            }
+    </style>
+
 </head>
 <body>
     <div class="container">
@@ -21,17 +95,20 @@
             </div>
 
             <div class="input-form">
-                <p>Tên đăng nhập</p>
+                <p class="label-input">Tên đăng nhập</p>
                 <input type="text" name="tenDangNhap" id="">
             </div>
 
             <div class="input-form">
-                <p>Mật khẩu</p>
+                <p class="label-input">Mật khẩu</p>
                 <input type="password" name="matKhau" id="">
             </div>
 
             <div class="submit-button">
                 <button type="submit">Đăng nhập</button>
+            </div>
+            <div class="thong-bao" style="margin: 30px 0 0 20px; width: 460px; height: 50px; padding-left: 40px;">
+                <p style="font-size:16px; line-height: 50px; color: red;">@ViewBag.thongBao</p>
             </div>
         </form>
     </div>

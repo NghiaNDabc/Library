@@ -1,0 +1,133 @@
+﻿@model QuanLySachThuVien.Models.DanhMuc
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+        .form-group label {
+            width: 150px;
+            margin-right: 10px; /* optional for spacing between label and input */
+        }
+
+        .form-group .form-control,
+        .form-group .form-control-file {
+            flex: 1;
+        }
+
+    .container {
+        /* background-color:red;*/
+        width: 1300px;
+        margin-left: 10px;
+    }
+
+    .margin {
+        margin-right: 20px;
+    }
+
+    #successPopup {
+        position: fixed;
+        top: 0;
+    }
+</style>
+
+<div id="successPopup" class="alert alert-success" style="display: none;">
+    <span id="successMessage"></span>
+</div>
+<div id="errorPopup" class="alert alert-success" style="display: none;">
+    Lỗi: <span id="errorMessage"></span>
+</div>
+<div>
+    <a href="@Url.Action("Index")" class="btn btn-success">
+        <i class="fas fa-arrow-left mr-2"></i> Trở về
+    </a>
+</div>
+<div class="container">
+    @using (Html.BeginForm("Edit", "BaoTriDanhMuc", FormMethod.Post, new { encype = "multipart/form-data", acceptcharset = "UFT-16", id = "myForm" }))
+    {
+        @Html.AntiForgeryToken();
+        @Html.HiddenFor(model => model.maDanhMuc)
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.maDanhMuc, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DisplayFor(model => model.maDanhMuc, new { htmlAttributes = new { @class = "form-control", @id = "maDanhMuc", @readonly = "readonly" } })
+                </div>
+            </div>
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.tenDanhMuc, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.tenDanhMuc, new { htmlAttributes = new { @class = "form-control", @id = "tenDanhMuc" } })
+                    @Html.ValidationMessageFor(model => model.tenDanhMuc, "", new { @class = "text-danger", @id = "tenDanhMucError" })
+                </div>
+            </div>
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.moTa, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.moTa, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.moTa, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" id="btnEdit" value="Cập nhật" style="background-color: #00ACE8 !important;" class="btn btn-default btn-primary" />
+            </div>
+        </div>
+    }
+</div>
+<script>
+    var loadF = function (event) {
+        var img = document.getElementById('output');
+        img.src = URL.createObjectURL(event.target.files[0]);
+    };
+</script>
+<script>
+    $(document).ready(function () {
+        $('#btnEdit').click(function (e) {
+            e.preventDefault();
+
+            var form = $('#myForm');
+            var formData = form.serializeArray();
+            formData.push({ name: "__RequestVerificationToken", value: $('input[name="__RequestVerificationToken"]').val() });
+
+            $.ajax({
+                url: form.attr('action'),
+                type: 'POST',
+                data: $.param(formData),
+                success: function (response) {
+                    if (response.success) {
+                        $('#successMessage').text(response.message);
+                        $('#successPopup').fadeIn().delay(2000).fadeOut();
+                    } else {
+                        $('#errorMessage').text(response.message);
+                        $('#errorPopup').fadeIn().delay(2000).fadeOut();
+                    }
+                },
+                error: function (xhr, status, error) {
+                    var errorMessage = "Có lỗi xảy ra khi cập nhật danh mục. Vui lòng thử lại sau.";
+                    if (xhr.responseJSON && xhr.responseJSON.message) {
+                        errorMessage = xhr.responseJSON.message;
+                    }
+                    $('#errorMessage').text(errorMessage);
+                    $('#errorPopup').fadeIn().delay(2000).fadeOut();
+                    console.log("Error: " + status + " " + error);
+                }
+            });
+        });
+    });
+</script>

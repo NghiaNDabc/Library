@@ -1,15 +1,10 @@
-<<<<<<< HEAD
 ﻿@model QuanLySachThuVien.Models.Sach
-=======
-﻿﻿@model QuanLySachThuVien.Models.Sach
->>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b
 
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<<<<<<< HEAD
 <h2>Chi tiết sách</h2>
 <hr />
 <label style="color: green; font-size: 20px"><b>>> </b></label>
@@ -61,97 +56,3 @@
 <a href="@Url.Action("Index", "TrangChu")" class="btn" role="button" style="font-weight:bold; padding:10px; border: 2px solid; width:180px;">Trở về</a>
 
 
-=======
-<h2>Details</h2>
-
-<div>
-    <h4>Sach</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.DanhMuc.tenDanhMuc)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DanhMuc.tenDanhMuc)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.tenSach)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.tenSach)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.hinhAnh)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.hinhAnh)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.soTrang)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.soTrang)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.moTa)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.moTa)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.soLuong)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.soLuong)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.namXuatBan)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.namXuatBan)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.nhaXuatBan)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.nhaXuatBan)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.giaTien)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.giaTien)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.tenTacGia)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.tenTacGia)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.maSach }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
->>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b

@@ -1,0 +1,152 @@
+﻿@model QuanLySachThuVien.Models.DanhMuc
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<style>
+    body {
+        font-family: Arial;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+        .form-group label {
+            width: 150px;
+            margin-right: 10px; /* optional for spacing between label and input */
+        }
+
+        .form-group .form-control,
+        .form-group .form-control-file {
+            flex: 1;
+        }
+
+    .container {
+        /* background-color:red;*/
+        width: 1300px;
+        margin-left: 10px;
+    }
+
+    .margin {
+        margin-right: 20px;
+    }
+
+    #successPopup {
+        position: fixed;
+        top: 0;
+    }
+</style>
+
+<div id="successPopup" class="alert alert-success" style="display: none;">
+    <span id="successMessage"></span>
+</div>
+<div id="errorPopup" class="alert alert-success" style="display: none;">
+    Lỗi: <span id="errorMessage"></span>
+</div>
+<div>
+    <a href="@Url.Action("Index")" class="btn btn-success">
+        <i class="fas fa-arrow-left mr-2"></i> Trở về
+    </a>
+</div>
+<div class="form-group d-flex row container">
+    <div class="col-md-offset-2 col-md-10">
+        <button id="clearButton" class="btn btn-default btn-secondary">Nhập lại</button>
+    </div>
+</div>
+<div class="container">
+    @using (Html.BeginForm("Create", "BaoTriDanhMuc", FormMethod.Post, new { acceptcharset = "UFT-16", id = "myForm" }))
+    {
+        @Html.AntiForgeryToken();
+        @*<input name="maDanhMuc" value="Madanhmuccc" type="hidden"/>*@
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.tenDanhMuc, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.tenDanhMuc, new { htmlAttributes = new { @class = "form-control", @id = "tenDanhMuc" } })
+                    @Html.ValidationMessageFor(model => model.tenDanhMuc, "", new { @class = "text-danger", @id = "tenDanhMucError" })
+                </div>
+            </div>
+            <div class="form-group d-flex row">
+                @Html.LabelFor(model => model.moTa, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.moTa, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.moTa, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Thêm danh mục mới" id="addButton" class="btn btn-default btn-primary" style="background-color: #00ACE8 !important;" />
+            </div>
+        </div>
+    }
+</div>
+
+
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#clearButton').click(function () {
+            // Xóa giá trị của tất cả các input
+            $('input[type="text"]').val('');
+            $('input[type="file"]').val('');
+            $('select').val('');
+            $('textarea').val('');
+        });
+    $('#addButton').click(function (e) {
+        //e.preventDefault();
+        var isValid = true;
+        // Kiểm tra ô input tên danh mục
+        if ($('#tenDanhMuc').val() === '') {
+            $('#tenDanhMucError').text('Vui lòng nhập tên danh mục.');
+            isValid = false;
+        } else {
+            $('#tenDanhMucError').text('');
+        }
+        var formData = {
+            tenDanhMuc: $('#tenDanhMuc').val(),
+            moTa: $('#moTa').val()
+        };
+        if (isValid == true) {
+            $.ajax({
+                url: '@Url.Action("Create", "BaoTriDanhMuc")',
+                type: 'POST',
+                data: formData,
+                dataType: 'json',
+                success: function (response) {
+                    if (response.success) {
+                        // Show success message in popup or div
+                        $('#successMessage').text(response.message);
+                        $('#successPopup').fadeIn();
+                        setTimeout(function () {
+                            $('#successPopup').fadeOut();
+                        }, 2000);
+                        // $('#successPopup').show(); // Show popup or div
+                    } else {
+                        // Show error message in popup or div
+                        $('#errorMessage').text(response.message);
+                        $('#errorPopup').fadeIn().delay(2000).fadeOut();
+                        // Show popup or div
+                    }
+                },
+                error: function () {
+                    // Handle AJAX error
+                    $('#errorMessage').text("Có lỗi xảy ra khi thêm danh mục. Vui lòng thử lại sau.");
+                    $('#errorPopup').fadeIn().delay(2000).fadeOut(); // Show popup or div
+                }
+            });
+        } else {
+            e.preventDefault();
+        };
+        return false; // Ngăn chặn hành động mặc định của nút
+    });
+});
+</script>

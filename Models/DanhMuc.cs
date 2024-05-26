@@ -1,4 +1,4 @@
-namespace QuanLySachThuVien.Models
+﻿namespace QuanLySachThuVien.Models
 {
     using System;
     using System.Collections.Generic;
@@ -18,14 +18,15 @@ namespace QuanLySachThuVien.Models
 
         [Key]
         [StringLength(10)]
-       
+        [DisplayName("Mã danh mục")]
         public string maDanhMuc { get; set; }
 
         [StringLength(50)]
-
+        [DisplayName("Tên danh mục")]
         public string tenDanhMuc { get; set; }
 
         [StringLength(200)]
+        [DisplayName("Mô tả")]
         public string moTa { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

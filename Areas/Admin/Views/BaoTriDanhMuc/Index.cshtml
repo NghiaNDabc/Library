@@ -1,0 +1,179 @@
+﻿@model IEnumerable<QuanLySachThuVien.Models.DanhMuc>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<style>
+    .btnxx {
+        background-color: #00ACE8 !important;
+        color: white;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .btn-them {
+        /*border: 1px solid black;*/
+        height: 50px;
+        width: 180px;
+        text-align: center;
+        display: flex; /* Sử dụng flexbox để căn giữa theo chiều dọc */
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: center;
+    }
+
+        .btn-them a {
+            display: block;
+            line-height: 100%;
+        }
+
+    .btn-xoa {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        height: 48px;
+        background-color: red;
+        /* position: absolute;
+        z-index: 100;*/
+    }
+
+    .bao {
+        height: 50px;
+    }
+
+    .them-xoa {
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        width: 85%;
+        /*width: 100%;*/
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: top 0.3s;
+    }
+</style>
+
+<div class="modal" id="confirmDelete" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Xác nhận xóa</h5>
+                <button type="button" class="close" data-dismiss="modal" onclick="confirmDelete(false)" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Bạn có chắc chắn muốn xóa các danh mục đã chọn không?</p>
+                <ul id="selectedBooksList"></ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" onclick="confirmDelete(true)">Có</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="confirmDelete(false)">Không</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bao">
+    <div class="them-xoa" id="them-xoa">
+        <div class="btn-them">
+            @Html.ActionLink("Thêm danh mục mới", "Create", null, new { @class = "btn btn-light btnxx" })
+        </div>
+        <div>
+            <div class="btn btn-danger btn-xoa" type="submit" style="font-size:30px;" onclick="showConfirmDelete()">Xóa</div>
+        </div>
+    </div>
+</div>
+
+@using (Html.BeginForm("DeleteList", "BaoTriDanhMuc", FormMethod.Post, new { id = "deleteForm" }))
+{
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th></th>
+                <th>Mã danh mục</th>
+                <th>Tên danh mục</th>
+                <th>Mô tả</th>
+            </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <input style="width:30px; height:30px;" class="form-check-input" type="checkbox" name="selectedProducts" value="@item.maDanhMuc" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.maDanhMuc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tenDanhMuc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.moTa)
+                </td>
+                <td>
+                    @Html.ActionLink("Sửa", "Edit", new { id = item.maDanhMuc })
+
+                </td>
+            </tr>
+        }
+    </table>
+}
+
+<script>
+    function showConfirmDelete() {
+        var confirmDelete = confirm("Bạn có chắc chắn muốn xóa các danh mục đã chọn không?");
+        if (confirmDelete) {
+            document.getElementById("deleteForm").submit();
+        }
+    }
+</script>
+
+<script>
+    function updateSelectedBooksList() {
+        var selectedBooksList = document.getElementById("selectedBooksList");
+        selectedBooksList.innerHTML = ""; // Xóa danh sách cũ
+        var selectedBooks = document.querySelectorAll('input[name="selectedProducts"]:checked');
+        selectedBooks.forEach(function (book) {
+            var listItem = document.createElement("li");
+            listItem.textContent = book.parentNode.nextElementSibling.nextElementSibling.textContent; // Lấy tên sách từ cột thứ 3
+            selectedBooksList.appendChild(listItem);
+        });
+    }
+    function confirmDelete(isConfirmed) {
+        if (isConfirmed) {
+            // Nếu người dùng chọn Yes, gửi yêu cầu xóa đi
+            document.getElementById("deleteForm").submit();
+        } else {
+            // Nếu người dùng chọn No, ẩn đi hộp thoại
+            document.getElementById("confirmDelete").style.display = "none";
+        }
+    }
+    function showConfirmDelete() {
+        // Hiển thị hộp thoại hỏi khi người dùng nhấn nút "Xóa"
+        updateSelectedBooksList();
+        document.getElementById("confirmDelete").style.display = "block";
+    }
+</script>
+
+<script>
+    setTimeout(function () {
+        var successMessage = document.querySelector('.alert-success');
+        if (successMessage) {
+            // Hiển thị thông báo thành công
+            successMessage.style.display = 'block';
+            // Đợi 3 giây nữa và sau đó ẩn thông báo
+            setTimeout(function () {
+                successMessage.style.display = 'none';
+            }, 300000);
+        }
+    }, 3000);
+</script>

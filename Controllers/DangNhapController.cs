@@ -19,12 +19,13 @@ namespace QuanLySachThuVien.Areas.Admin.Controllers
             //Kiểm tra xem đã điền đủ tài khoản và mật khẩu chưa
             if (string.IsNullOrEmpty(tenDangNhap) || string.IsNullOrEmpty(matKhau))
             {
-                ViewBag.thongBao = "Vui long nhap day du thong tin !";
+                ViewBag.thongBao = "Vui lòng nhập đầy đủ thông tin !";
                 return View();
             }
 
             //Tìm tài khoản theo tên đăng nhập trong database
-            var taiKhoan = new mapTaiKhoan().ChiTiet(tenDangNhap);
+            QuanLySachThuVienContext db = new QuanLySachThuVienContext();
+            var taiKhoan = db.TaiKhoans.SingleOrDefault(m => m.tenDangNhap == tenDangNhap);
 
             //Kiểm tra tài khoản tồn tại không
             if (taiKhoan == null)
@@ -42,12 +43,14 @@ namespace QuanLySachThuVien.Areas.Admin.Controllers
                 return View();
             }
 
-            //Kiểm tra quyền
-            if (taiKhoan.quyen == "NV")
+            //Kiểm tra quyền và chuyển hướng sang trang admin/user
+            if (taiKhoan.quyen == "admin")
             {
                 return Redirect("/Admin/BaoTriSach/Index");
             }
             else return Redirect("/TrangChu/Index");
         }
+
     }
+
 }

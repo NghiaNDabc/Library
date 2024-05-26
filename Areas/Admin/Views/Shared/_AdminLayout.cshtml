@@ -69,11 +69,11 @@
                 <span>Thư viện sách HaUI</span>
             </div>
             <a href="#" >Trang chủ</a>
-            <a href="#">Bảo trì danh mục</a>
-            @Html.ActionLink("Bảo trì sách", "Index", "Baotrisach", new {@class="active"})
+            @Html.ActionLink("Bảo trì danh mục", "Index", "Baotridanhmuc")
+            @Html.ActionLink("Bảo trì sách", "Index", "Baotrisach")
         </div>
         <div>
-            @RenderBody()
+            @RenderBody();
         </div>
     </div>
 

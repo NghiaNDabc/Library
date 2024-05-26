@@ -1,15 +1,10 @@
-<<<<<<< HEAD
 ﻿@model IEnumerable<QuanLySachThuVien.Models.Sach>
-=======
-﻿﻿@model IEnumerable<QuanLySachThuVien.Models.Sach>
->>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b
 
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<<<<<<< HEAD
 <h2>
 
     <label style="color: green; font-weight:bold; font-size:35px;">|</label>
@@ -111,22 +106,3 @@
 </div>
 
 
-=======
-<h2>Sách nổi bật</h2>
-<div class="row">
-    @foreach (var item in Model)
-    {
-        <div class="col-sm-6 col-md-4 col-mg-3 table-bordered">
-            @{
-                string path = "";
-            }
-            <img src=@Url.Content(path) class="img-thumbnail" width="150" />
-            <br />
-            @Html.DisplayFor(modelItem => item.tenSach)<br />
-            @Html.DisplayFor(modelItem => item.nhaXuatBan)<br />
-            @Html.DisplayFor(modelItem => item.giaTien)<br />
-            @Html.ActionLink("Xem chi tiết", "Details", new { id = item.maSach })
-        </div>
-    }
-</div>
->>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b

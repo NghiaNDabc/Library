@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -83,7 +84,7 @@
                     {
                         <div class="justify-content-xxl-center">
                             <input type="text" name="key" style="width:450px ;background-color: #F4E19D; border-radius: 50px; border-color: white; padding:3px 10px;" placeholder="Nhập từ khóa ...">
-                            <input type="submit" style="background-color: #0FC2C2; border-radius: 50px; width: 100px; border-color:white" value="Tìm kiếm" />
+                            <input type="submit" style="background-color: #00ACE8; color:white; font-weight:bold; border-radius: 50px; width: 100px; border-color: white" value="Tìm kiếm" />
 
                         </div>
                     }
@@ -118,8 +119,9 @@
                 <li style="margin: 0px 10px">@Html.ActionLink("Quy định", "QuyDinh", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
                 <li style="margin: 0px 10px">@Html.ActionLink("Tài khoản", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                 <li style="margin: 0px 10px">@Html.ActionLink("Giỏ hàng", "XemGioHang", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
-            </ul>
+                <li style="margin: 0px 10px">@Html.ActionLink("Đăng nhập", "DangNhap", "DangNhap", new { area = "" }, new { @class = "nav-link" })</li>
 
+            </ul>
         </div>
     </nav>
     <div class="container body-content">

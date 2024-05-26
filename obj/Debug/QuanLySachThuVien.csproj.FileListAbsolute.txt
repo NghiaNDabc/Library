@@ -81,8 +81,6 @@ C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.dll
 C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.SqlServer.dll
 C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.xml
 C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\EntityFramework.SqlServer.xml
-<<<<<<< HEAD
-<<<<<<< HEAD
 D:\EDU\KÌ 2 2023-2024\TTCN\qLTV\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.AssemblyReference.cache
 D:\EDU\KÌ 2 2023-2024\TTCN\qLTV\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.CoreCompileInputs.cache
 D:\EDU\KÌ 2 2023-2024\TTCN\qLTV\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.dll
@@ -166,7 +164,6 @@ D:\EDU\KÌ 2 2023-2024\TTCN\qLTV\QuanLySachThuVien\bin\Newtonsoft.Json.xml
 D:\EDU\KÌ 2 2023-2024\TTCN\qLTV\QuanLySachThuVien\bin\Antlr3.Runtime.pdb
 D:\EDU\KÌ 2 2023-2024\TTCN\qLTV\QuanLySachThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\EDU\KÌ 2 2023-2024\TTCN\qLTV\QuanLySachThuVien\obj\Debug\QuanLySa.D224E8C8.Up2Date
-<<<<<<< HEAD
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\QuanLySachThuVien.dll.config
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\QuanLySachThuVien.dll
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\QuanLySachThuVien.pdb
@@ -225,8 +222,6 @@ C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.Sq
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\Newtonsoft.Json.dll
-C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.dll
-C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.Mvc.dll
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Helpers.dll
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Mvc.dll
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Optimization.dll
@@ -237,8 +232,6 @@ C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPage
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\WebGrease.dll
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.xml
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.SqlServer.xml
-C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.xml
-C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.Mvc.xml
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Helpers.xml
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Mvc.xml
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Optimization.xml
@@ -254,96 +247,355 @@ C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachTh
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.CopyComplete
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.dll
 C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.pdb
-=======
-=======
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\QuanLySachThuVien.dll.config
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\QuanLySachThuVien.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\QuanLySachThuVien.pdb
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\csc.exe
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\csc.exe.config
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\csc.rsp
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\csi.exe
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\csi.exe.config
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\csi.rsp
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.AppContext.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Console.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Globalization.Calendars.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.IO.Compression.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Net.Http.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Net.Sockets.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.ValueTuple.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Xml.XPath.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\vbc.exe
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\vbc.exe.config
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\vbc.rsp
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\VBCSCompiler.exe
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\Antlr3.Runtime.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\EntityFramework.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\EntityFramework.SqlServer.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\Newtonsoft.Json.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.Helpers.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.Mvc.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.Optimization.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.Razor.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.WebPages.Deployment.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.WebPages.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.WebPages.Razor.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\WebGrease.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\EntityFramework.xml
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\EntityFramework.SqlServer.xml
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.Helpers.xml
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.Mvc.xml
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.Optimization.xml
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.Razor.xml
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.WebPages.xml
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.WebPages.Deployment.xml
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\System.Web.WebPages.Razor.xml
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\Newtonsoft.Json.xml
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\Antlr3.Runtime.pdb
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.AssemblyReference.cache
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.CoreCompileInputs.cache
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\obj\Debug\QuanLySa.D224E8C8.Up2Date
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.dll
-C:\Users\hoang\Desktop\TTCN\QLTV\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.pdb
->>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b
-=======
-C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\PagedList.dll
-C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\PagedList.Mvc.dll
-C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\PagedList.xml
-C:\Users\HP\Desktop\Project\QuanLySachThuVien\bin\PagedList.Mvc.xml
->>>>>>> Nghia
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
+C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.dll
+C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.Mvc.dll
+C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.xml
+C:\Users\HP\Downloads\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.Mvc.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\QuanLySachThuVien.dll.config
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\QuanLySachThuVien.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\QuanLySachThuVien.pdb
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csc.exe
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csc.exe.config
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csc.rsp
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csi.exe
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csi.exe.config
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csi.rsp
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.AppContext.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Console.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.IO.Compression.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Net.Http.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Net.Sockets.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.ValueTuple.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Xml.XPath.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\vbc.exe
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\vbc.exe.config
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\vbc.rsp
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\VBCSCompiler.exe
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\Antlr3.Runtime.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.SqlServer.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\Newtonsoft.Json.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.Mvc.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Helpers.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Mvc.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Optimization.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Razor.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.Razor.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\WebGrease.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.SqlServer.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.Mvc.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Helpers.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Mvc.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Optimization.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Razor.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.Razor.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\Newtonsoft.Json.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\Antlr3.Runtime.pdb
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.AssemblyReference.cache
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.CoreCompileInputs.cache
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySa.D224E8C8.Up2Date
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.dll
+C:\Users\hoang\Desktop\TTCN\QLTV-Full\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.pdb
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\QuanLySachThuVien.dll.config
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\QuanLySachThuVien.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\QuanLySachThuVien.pdb
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csc.exe
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csc.exe.config
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csc.rsp
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csi.exe
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csi.exe.config
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csi.rsp
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.AppContext.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Collections.Immutable.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Console.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Globalization.Calendars.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.IO.Compression.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.IO.FileSystem.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Net.Http.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Net.Sockets.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.ValueTuple.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Xml.XPath.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\vbc.exe
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\vbc.exe.config
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\vbc.rsp
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\VBCSCompiler.exe
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\VBCSCompiler.exe.config
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\Antlr3.Runtime.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.SqlServer.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\Newtonsoft.Json.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.Mvc.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Helpers.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Mvc.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Optimization.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Razor.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.Razor.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\WebGrease.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.SqlServer.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.Mvc.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Helpers.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Mvc.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Optimization.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Razor.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.Razor.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\Newtonsoft.Json.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\Antlr3.Runtime.pdb
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.AssemblyReference.cache
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.CoreCompileInputs.cache
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.CopyComplete
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.dll
+D:\Dev files\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.pdb
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\QuanLySachThuVien.dll.config
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\QuanLySachThuVien.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\QuanLySachThuVien.pdb
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csc.exe
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csc.exe.config
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csc.rsp
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csi.exe
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csi.exe.config
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\csi.rsp
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.AppContext.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Collections.Immutable.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Console.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Globalization.Calendars.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.IO.Compression.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.IO.FileSystem.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Net.Http.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Net.Sockets.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Reflection.Metadata.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.ValueTuple.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Xml.XPath.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\vbc.exe
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\vbc.exe.config
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\vbc.rsp
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\VBCSCompiler.exe
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\roslyn\VBCSCompiler.exe.config
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\Antlr3.Runtime.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.SqlServer.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\Microsoft.Web.Infrastructure.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\Newtonsoft.Json.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.Mvc.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Helpers.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Mvc.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Optimization.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Razor.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.Deployment.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.Razor.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\WebGrease.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\EntityFramework.SqlServer.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\PagedList.Mvc.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Helpers.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Mvc.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Optimization.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.Razor.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.Deployment.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\System.Web.WebPages.Razor.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\Newtonsoft.Json.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\Antlr3.Runtime.pdb
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.AssemblyReference.cache
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.CoreCompileInputs.cache
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.CopyComplete
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.dll
+D:\QuanLySachThuVien\QuanLySachThuVien\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.pdb
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\QuanLySachThuVien.dll.config
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\QuanLySachThuVien.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\QuanLySachThuVien.pdb
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\csc.exe
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\csc.exe.config
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\csc.rsp
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\csi.exe
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\csi.exe.config
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\csi.rsp
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.AppContext.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Console.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.IO.Compression.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Net.Http.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Net.Sockets.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.ValueTuple.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Xml.XPath.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\vbc.exe
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\vbc.exe.config
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\vbc.rsp
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\VBCSCompiler.exe
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\Antlr3.Runtime.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\EntityFramework.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\EntityFramework.SqlServer.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\Newtonsoft.Json.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\PagedList.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\PagedList.Mvc.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.Helpers.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.Mvc.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.Optimization.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.Razor.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.WebPages.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.WebPages.Razor.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\WebGrease.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\EntityFramework.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\EntityFramework.SqlServer.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\PagedList.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\PagedList.Mvc.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.Helpers.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.Mvc.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.Optimization.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.Razor.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.WebPages.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\System.Web.WebPages.Razor.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\Newtonsoft.Json.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\Antlr3.Runtime.pdb
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.csproj.CopyComplete
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.dll
+C:\Users\HP\Desktop\Project\TTCN\QuanLySachThuVien\obj\Debug\QuanLySachThuVien.pdb

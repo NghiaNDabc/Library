@@ -5,10 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
-<<<<<<< HEAD
 using System.Web.Caching;
-=======
->>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b
 using System.Web.Mvc;
 using QuanLySachThuVien.Models;
 
@@ -19,7 +16,6 @@ namespace QuanLySachThuVien.Controllers
         private QuanLySachThuVienContext db = new QuanLySachThuVienContext();
 
         // GET: Saches
-<<<<<<< HEAD
         public ActionResult Index(string key)
         {
             var saches = db.Saches.Include(s => s.DanhMuc);
@@ -32,12 +28,6 @@ namespace QuanLySachThuVien.Controllers
             var saches = db.Saches;
             return View(saches.ToList());
 
-=======
-        public ActionResult Index()
-        {
-            var saches = db.Saches.Include(s => s.DanhMuc);
-            return View(saches.ToList());
->>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b
         }
 
         // GET: Saches/Details/5
@@ -55,7 +45,6 @@ namespace QuanLySachThuVien.Controllers
             return View(sach);
         }
 
-<<<<<<< HEAD
         // GET: Saches/Create\
 
         public ActionResult XemSachTheoDM(string madm)
@@ -150,11 +139,6 @@ namespace QuanLySachThuVien.Controllers
         {
             return View();
         }
-=======
-        // GET: Saches/Create
-
-
->>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -164,8 +148,4 @@ namespace QuanLySachThuVien.Controllers
             base.Dispose(disposing);
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 17e17601d1f515e07405f90f084588d466e5e80b

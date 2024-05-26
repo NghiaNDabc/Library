@@ -23,28 +23,19 @@
         [DisplayName("Mã sách")]
         public string maSach { get; set; }
 
-        
+        [Required]
         [StringLength(10)]
-<<<<<<< HEAD
         [DisplayName("Mã danh mục")]
-=======
-        [DisplayName("Tên danh mục")]
-        
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
         public string maDanhMuc { get; set; }
-    
+
         [StringLength(50)]
         [DisplayName("Tên sách")]
         public string tenSach { get; set; }
-        
+
         [StringLength(50)]
         [DisplayName("Hình ảnh")]
         public string hinhAnh { get; set; }
         [DisplayName("Số trang")]
-<<<<<<< HEAD
-=======
-
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
         public int? soTrang { get; set; }
 
         [StringLength(200)]

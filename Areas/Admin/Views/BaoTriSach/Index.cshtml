@@ -8,7 +8,6 @@
 <link href="~/Content/keyFrame.css" rel="stylesheet" />
 <link href="~/Content/PagedList.css" rel="stylesheet" />
 <style>
-<<<<<<< HEAD
     #deleteForm, .table {
         width: 100%;
     }
@@ -46,83 +45,6 @@
         height: 48px;
         background-color: red;
         /* position: absolute;
-=======
-    .btnxx {
-        background-color: #00ACE8 !important;
-        color: white;
-        font-weight: bold;
-        
-    }
-    a {
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    .btn-them {
-        //border: 1px solid black;
-        height: 50px;
-        width: 180px;
-        text-align: center;
-        display: flex; /* Sử dụng flexbox để căn giữa theo chiều dọc */
-        justify-content: center; /* Căn giữa theo chiều ngang */
-        align-items: center;
-    }
-
-<<<<<<< HEAD
-
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.DanhMuc.tenDanhMuc)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.tenSach)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.hinhAnh)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.soTrang)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.moTa)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.soLuong)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.namXuatBan)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.nhaXuatBan)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.giaTien)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.tenTacGia)
-        </th>
-        <th></th>
-    </tr>
-=======
-        .btn-them a {
-            display: block;
-            line-height: 100%;
-        }
->>>>>>> Nghia
-
-    .btn-xoa {
-        display: flex;
-        align-content:center;
-        align-items:center;
-        height:48px;
-        background-color: red;
-       /* position: absolute;
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
         z-index: 100;*/
     }
 
@@ -131,14 +53,8 @@
     }
 
     .them-xoa {
-<<<<<<< HEAD
         position: fixed;
         top: 0;
-=======
-        position:fixed;
-        top:0;
-        
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
         display: flex;
         justify-content: space-between;
         height: 50px;
@@ -147,7 +63,6 @@
         background-color: white;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         transition: top 0.3s;
-<<<<<<< HEAD
     }
 
 
@@ -237,28 +152,16 @@
             .them-xoa input[type="submit"]:hover {
                 background-color: #009999;
             }
-=======
-        
-    }
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
 </style>
 
 
 
 @*@if (TempData["SuccessMessage"] != null)
-<<<<<<< HEAD
     {
         <div class="alert alert-success" style="position:fixed; z-index:100;">
             @TempData["SuccessMessage"]
         </div>
     }*@
-=======
-{
-    <div class="alert alert-success" style="position:fixed; z-index:100;">
-        @TempData["SuccessMessage"]
-    </div>
-}*@
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
 <div class="modal" id="confirmDelete" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -280,39 +183,23 @@
         </div>
     </div>
 </div>
-<<<<<<< HEAD
 y>
 <div class="bao">
     <div class="them-xoa" id="them-xoa">
         <div class="btn-them">
-=======
-<div class="bao">
-    <div class="them-xoa" id="them-xoa">
-        <div class="btn-them" >
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
             @Html.ActionLink("Thêm sách mới", "Create", null, new { @class = "btn btn-light btnxx" })
         </div>
         <div>
             @using (Html.BeginForm("Index", "BaoTriSach", FormMethod.Post))
             {
                 <div class="justify-content-xxl-center">
-<<<<<<< HEAD
                     <input type="text" name="searchString" placeholder="Nhập từ khóa ...">
                     <input type="submit" value="Tìm kiếm">
-=======
-                    <input type="text" name="searchString" style="width:450px ;background-color: #F4E19D; border-radius: 50px; border-color: white; padding:3px 10px;" placeholder="Nhập từ khóa ...">
-                    <input type="submit" style="background-color: #0FC2C2; border-radius: 50px; width: 100px; border-color:white" value="Tìm kiếm" />
-
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
                 </div>
             }
         </div>
         <div>
-<<<<<<< HEAD
             <div class="btn-xoa" onclick="showConfirmDelete()">Xóa</div>
-=======
-            <div class="btn btn-danger btn-xoa" type="submit" style="font-size:30px;" onclick="showConfirmDelete()">Xóa</div>
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
         </div>
     </div>
 </div>
@@ -320,27 +207,16 @@ y>
 @using (Html.BeginForm("DeleteList", "BaoTriSach", FormMethod.Post, new { id = "deleteForm" }))
 {
 
-<<<<<<< HEAD
     <table class="table table-striped">
         <thead class="thead-dark">
             <tr>
                 <th></th>
                 <th>Mã sách</th>
-=======
-    <table class="table table-striped" >
-        <thead class="thead-dark">
-            <tr>
-                <th></th>
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
                 <th>Danh mục</th>
                 <th>Tên sách</th>
                 <th>Hình ảnh</th>
                 <th>Số trang</th>
-<<<<<<< HEAD
 
-=======
-                <th>Mô tả</th>
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
                 <th>Số lượng</th>
                 <th>Năm xuất bản</th>
                 <th>Nhà xuất bản</th>
@@ -356,12 +232,9 @@ y>
                     <input style="width:30px; height:30px;" class="form-check-input" type="checkbox" name="selectedProducts" value="@item.maSach" />
                 </td>
                 <td>
-<<<<<<< HEAD
                     @Html.DisplayFor(modelItem => item.maSach)
                 </td>
                 <td>
-=======
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
                     @Html.DisplayFor(modelItem => item.DanhMuc.tenDanhMuc)
                 </td>
                 <td>
@@ -377,13 +250,7 @@ y>
                 <td>
                     @Html.DisplayFor(modelItem => item.soTrang)
                 </td>
-<<<<<<< HEAD
 
-=======
-                <td>
-                    @Html.DisplayFor(modelItem => item.moTa)
-                </td>
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
                 <td>
                     @Html.DisplayFor(modelItem => item.soLuong)
                 </td>
@@ -409,11 +276,7 @@ y>
     </table>
 }
 Trang @(Model.PageNumber) / @Model.PageCount
-<<<<<<< HEAD
 @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
-=======
-@Html.PagedListPager(Model,page => Url.Action("Index", new {page}))
->>>>>>> d89e51bca01460a0f986c3e0b458b76dbea85519
 <script>
     //window.onscroll = function() {scrollFunction()};
 
