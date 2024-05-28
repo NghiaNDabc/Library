@@ -43,7 +43,7 @@ namespace QuanLySachThuVien.Areas.Admin.Controllers
 
 
             var list = db.Saches.Where(s => selectedProducts.Contains(s.maSach)).ToList();
-            //xóa ảnh
+            //xóa ảnh test
 
             TempData["SuccessMessage"] = "Xóa thành công " + list.Count + " cuốn sách!";
             db.Saches.RemoveRange(list);
