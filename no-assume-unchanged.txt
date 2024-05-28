@@ -1,0 +1,14 @@
+git update-index --no-assume-unchanged --recursive .vs/
+git update-index --no-assume-unchanged --recursive bin/
+git update-index --no-assume-unchanged --recursive obj/
+git update-index --no-assume-unchanged --recursive packet/
+git update-index --no-assume-unchanged favicon.ico
+git update-index --no-assume-unchanged Global.asax
+git update-index --no-assume-unchanged Global.asax.cs
+git update-index --no-assume-unchanged packages.config
+git update-index --no-assume-unchanged QuanLySachThuVien.csproj
+git update-index --no-assume-unchanged QuanLySachThuVien.csproj.user
+git update-index --no-assume-unchanged QuanLySachThuVien.sln
+git update-index --no-assume-unchanged Web.config
+git update-index --no-assume-unchanged Web.Debug.config
+git update-index --no-assume-unchanged Web.Release.config
