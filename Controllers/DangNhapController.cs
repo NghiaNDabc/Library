@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using QuanLySachThuVien.Models;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using QuanLySachThuVien.Models;
 
 namespace QuanLySachThuVien.Areas.Admin.Controllers
 {
@@ -13,6 +10,14 @@ namespace QuanLySachThuVien.Areas.Admin.Controllers
         {
             Session["taikhoan"] = null;
             return RedirectToAction("DangNhap");
+        }
+        public ActionResult TaiKhoanCuaToi()
+        {
+            return View();
+        }
+        public ActionResult DangNhap()
+        {
+            return View();
         }
         [HttpPost]
         public ActionResult DangNhap(string tenDangNhap, string matKhau)

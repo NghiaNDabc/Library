@@ -1,4 +1,4 @@
-﻿
+﻿@using QuanLySachThuVien.Models
 <!DOCTYPE html>
 
 <html>
@@ -9,6 +9,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <style>
+
         /* Kiểu cho các mục dropdown */
         .dropdown {
             position: relative;
@@ -55,18 +56,21 @@
         }
 
         .navbar a:hover, .dropdown:hover .dropbtn {
-            background-color: #ddd;
-            color: black;
+            color: darkblue;
+        }
+
+        .dropdown-content a:hover {
+            text-decoration: underline;
         }
 
         footer p {
             font-size: 13px;
         }
-        .footer-site a:hover{
-            color:green;
-            font-weight:bold;
+
+        .footer-site a:hover {
+            color: green;
+            font-weight: bold;
         }
-       
     </style>
 </head>
 <body>
@@ -114,12 +118,34 @@
                         </div>
                     </div>
                 </li>
-                <li style="margin: 0px 10px">@Html.ActionLink("Liên hệ", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                <li style="margin: 0px 10px">@Html.ActionLink("Giới thiệu", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li style="margin: 0px 10px">@Html.ActionLink("Liên hệ", "Contact", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
+                <li style="margin: 0px 10px">@Html.ActionLink("Giới thiệu", "About", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
                 <li style="margin: 0px 10px">@Html.ActionLink("Quy định", "QuyDinh", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
-                <li style="margin: 0px 10px">@Html.ActionLink("Tài khoản", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                <li style="margin: 0px 10px">@Html.ActionLink("Giỏ hàng", "XemGioHang", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
-                <li style="margin: 0px 10px">@Html.ActionLink("Đăng nhập", "DangNhap", "DangNhap", new { area = "" }, new { @class = "nav-link" })</li>
+                <li style="margin: 0px 10px">@Html.ActionLink("Giỏ sách", "XemGioHang", "GioHang", new { area = "" }, new { @class = "nav-link" })</li>
+                @{
+                    if (Session["taikhoan"] == null)
+                    {
+                        <li style="margin: 0px 10px">@Html.ActionLink("Đăng nhập", "DangNhap", "DangNhap", new { area = "" }, new { @class = "nav-link" })</li>
+
+                    }
+                    else
+                    {
+                        TaiKhoan tk = (TaiKhoan)Session["taikhoan"];
+                        NguoiDung nd = db.NguoiDungs.SingleOrDefault(n => n.maNguoiDung == tk.maNguoiDung);
+                        <li style="margin: 0 10px" class="nav-item" >
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn nav-link" style="color: darkblue;">@nd.hoTen</a>
+                                <div class="dropdown-content">
+                                    <a href="@Url.Action("DangXuat", "DangNhap")">Đăng xuất</a>
+                                    <a href="@Url.Action("TaiKhoanCuaToi", "DangNhap")">Tài khoản của tôi</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    }
+
+
+                }
 
             </ul>
         </div>
@@ -165,8 +191,8 @@
                                 Facebook
                             </a>
                         </li>
-                        <li>@Html.ActionLink("Giới thiệu", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                        <li>@Html.ActionLink("Trợ giúp", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Giới thiệu", "About", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Trợ giúp", "Contact", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
                     </ul>
                 </div>
             </div>
@@ -177,7 +203,7 @@
         </div>
     </footer>
 
-    
+
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

@@ -140,6 +140,7 @@
     <Compile Include="Areas\Admin\Controllers\BaoTriSachController.cs" />
     <Compile Include="Areas\Admin\Controllers\TestController.cs" />
     <Compile Include="Controllers\DangNhapController.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TrangChuController.cs" />
     <Compile Include="Global.asax.cs">
@@ -240,24 +241,25 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\TrangChu\About.cshtml" />
+    <Content Include="Views\TrangChu\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\TrangChu\Details.cshtml" />
     <Content Include="Views\TrangChu\Index.cshtml" />
     <Content Include="Views\TrangChu\XemSachTheoDM.cshtml" />
     <Content Include="Views\TrangChu\TimKiem.cshtml" />
-    <Content Include="Views\TrangChu\ThemVaoGioHang.cshtml" />
-    <Content Include="Views\TrangChu\XemGioHang.cshtml" />
+    <Content Include="Views\GioHang\XemGioHang.cshtml" />
     <Content Include="Views\TrangChu\XemALLSach.cshtml" />
-    <Content Include="Views\TrangChu\MuonSach.cshtml" />
+    <Content Include="Views\GioHang\MuonSach.cshtml" />
     <Content Include="Views\TrangChu\QuyDinh.cshtml" />
     <Content Include="Views\DangNhap\DangNhap.cshtml" />
     <Content Include="Views\DangNhap\DangKy.cshtml" />
+    <Content Include="Views\DangNhap\TaiKhoanCuaToi.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Views\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

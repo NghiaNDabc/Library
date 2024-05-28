@@ -1,0 +1,127 @@
+﻿@model IEnumerable<QuanLySachThuVien.Models.ChiTietGioHang>
+@using QuanLySachThuVien.Models
+@{
+    ViewBag.Title = "ThemVaoGioHang";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    QuanLySachThuVienContext db = new QuanLySachThuVienContext();
+    int sl = 0;
+    decimal thanhtien = 0;
+    if (Model != null && Model.Any())
+    {
+        sl = Convert.ToInt16(Model.Sum(ct => ct.soLuong));
+        thanhtien = Convert.ToDecimal(Model.Sum(x => x.soLuong * db.Saches.FirstOrDefault(s => s.maSach == x.maSach).giaTien));
+
+    }
+    string thanhtienFormatted = thanhtien.ToString("#,##0") + " VND";
+    List<ChiTietGioHang> list = new List<ChiTietGioHang>();
+}
+<h3>
+
+    <label style="color: green; font-weight:bold; font-size:35px;">|</label>
+    Giỏ hàng
+    <span style="border-radius: 80px; background-color:black;">
+        <label style="color: white; text-align: center; width: 38px;">@sl</label>
+    </span>
+</h3>
+<div>
+
+    <br />
+    @if (Model != null && Model.Any())
+    {
+        using (Html.BeginForm("CapNhatGioHang", "GioHang", FormMethod.Post))
+        {
+            <div class="d-flex">
+                <table class="w-50 table" style="margin-right: 150px">
+                    @foreach (var item in Model)
+                    {
+                        Sach s = db.Saches.FirstOrDefault(sa => sa.maSach == item.maSach);
+                        <tr>
+                            <td>
+                                @{
+                                    string path = "~/Content/Images/" + s.hinhAnh;
+                                }
+
+                                <a href="@Url.Action("Details", "TrangChu", new { id = item.maSach })">
+                                    <img src=@Url.Content(path) class="img-thumbnail" width="150" />
+                                </a>
+                            </td>
+
+                            <td style="vertical-align:top">
+                                <div style="margin-left: 15px; margin-top:0">
+                                    <p>
+                                        <b>Mã sách:</b>  <i>@Html.DisplayFor(model => s.maSach)</i>
+                                    </p>
+                                    <p>
+                                        <b>Tên sách:</b>  @Html.DisplayFor(model => s.tenSach)
+                                    </p>
+                                    <p><b>Tác giả:</b> @Html.DisplayFor(model => s.tenTacGia) </p>
+                                    @{
+                                        decimal giatien = (decimal)s.giaTien;
+                                        string giaTienFormatted = giatien.ToString("#,##0") + " VND";
+                                    }
+
+                                    <p><b>Giá tiền: </b> @giaTienFormatted</p>
+                                    <p>
+                                        <b>Số lượng: </b>
+                                        <input name="soluong_@item.maSach" type="number" min="1" value="@item.soLuong" style="width: 45px" />
+                                    </p>
+                                </div>
+
+                            </td>
+                            <td style="vertical-align: top">
+                                <a href="@Url.Action("XoaSanPham", "GioHang", new { maSach = item.maSach })" class="btn" role="button" style="font-weight:bold; color:red; margin-top: -5px; margin-left:10px">X</a>
+
+                            </td>
+
+
+                        </tr>
+                    }
+
+                </table>
+                <div class="w-20">
+                    <h3>Tóm tắt giỏ sách</h3>
+                    <p>
+                        <b>Thành tiền:</b>
+                        <span style="color: red">@thanhtienFormatted</span>
+                    </p>
+                    <a href="@Url.Action("MuonSach", "GioHang")" class="btn" role="button" style="font-weight:bold; padding:10px; border: 2px solid; width:180px;">Mượn sách</a>
+                    <br />
+                    <span style="color: red; font-weight: bold; font-size:12px">(Lưu ý: Sử dụng ứng dụng Bookworm để xem đầy đủ tài liệu. <br />Bạn đọc có thể tải Bookworm từ App Store hoặc Google play với <br />từ khóa "Libol Bookworm”)</span>
+                </div>
+            </div>
+            <div>
+                <a href="@Url.Action("XemALLSach", "TrangChu")" class="btn" role="button" style="font-weight:bold; padding:10px; border: 2px solid; width:180px;">Tiếp tục xem sách</a>
+
+                <input type="submit" class="btn" role="button" style="font-weight:bold; padding:10px; border: 2px solid; width:180px; margin-left: 20px; background-color: lightblue" value="Cập nhật giỏ hàng"></input>
+            </div>
+        }
+
+    }
+    else
+    {
+        <p style="font-weight: bold; text-align: center; font-size: 20px" class="w-100">Giỏ sách của bạn đang rỗng !</p>
+        <a href="@Url.Action("XemALLSach", "TrangChu")" class="btn" role="button" style="font-weight:bold; padding:10px; border: 2px solid; width:180px;">Tiếp tục xem sách</a>
+
+    }
+
+
+</div>
+
+<br />
+
+
+
+@{
+    if (ViewBag.Error != null)
+    {
+
+        <div class="alert alert-danger">
+            @ViewBag.Error
+        </div>
+
+    }
+}
+
