@@ -1,0 +1,204 @@
+﻿@model QuanLySachThuVien.Models.PhieuMuon
+
+@{
+    var baseImageUrl = Url.Content("~/Content/Images/");
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<style>
+    .suggestions {
+        border: 1px solid #ccc;
+        max-height: 150px;
+        overflow-y: auto;
+    }
+
+        .suggestions li {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+            .suggestions li:hover {
+                background-color: #f0f0f0;
+            }
+</style>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>PhieuMuon</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.maPhieuMuon)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.maNguoiDung, "maNguoiDung", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("maNguoiDung", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.maNguoiDung, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ngayMuon, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input value="@Model.ngayMuon" name="ngayMuon" class = "form-control" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ngayTra, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    <input value="@Model.ngayTra" name="ngayTra" class="form-control" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.tinhTrang, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.tinhTrang, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.tinhTrang, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Save" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+<div class="d-flex">
+    <input id="ms" />
+    <input id="searchString" onkeyup="fecthSuggest()" />
+    <input  id="imgSearch" />
+    <input id="sl" />
+
+    <button id="addsach">Thêm</button>
+</div>
+
+    <ul id="goiY" class="suggestion"></ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Mã sách</th>
+                <th>Tên sách</th>
+                <th>Hình ảnh</th>
+                <th>Số lượng mượn</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var sach in ViewBag.Saches)
+            {
+                <tr>
+                    <td>@sach.MaSach</td>
+                    <td>@sach.TenSach</td>
+                    <td><img src="~/Content/Images/@sach.HinhAnh" alt="Hình ảnh" style="width: 100px; height: auto;" />
+                        <input value="@sach.HinhAnh" name="hinhAnh" />
+                    </td>
+                    <td>@sach.SoLuongMuon</td>
+                    
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>
+<script>
+    function fecthSuggest() {
+        const searchString = document.getElementById('searchString').value;
+        $.ajax({
+            url: '@Url.Action("GoiYSach","PhieuMuons")',
+            data: {
+                query: searchString
+            },
+            success: function (suggestions) {
+                display(suggestions);
+            }
+        });
+    }
+    function display(suggestions) {
+
+        const list = document.getElementById('goiY');
+        list.innerHTML = ''; // Xóa nội dung hiện tại của danh sách
+        if (suggestions && suggestions.length > 0) { // Kiểm tra nếu có dữ liệu gợi ý
+            suggestions.forEach(suggestion => {
+                const li = document.createElement('li');
+                li.textContent = suggestion.tenSach; // Hiển thị tên sách trong mỗi phần tử li
+                li.onclick = () => select(suggestion.maSach, suggestion.tenSach, suggestion.hinhAnh); // Gọi hàm select khi phần tử li được nhấp
+                list.appendChild(li); // Thêm phần tử li vào danh sách ul
+            });
+        }
+    }
+
+
+    function select(maSach, tenSach,hinhAnh) {
+        document.getElementById('ms').value = maSach;
+
+
+        document.getElementById('searchString').value = tenSach;
+        document.getElementById('imgSearch').value = hinhAnh;
+        document.getElementById('goiY').innerHTML = '';
+    }
+
+    // Hàm thêm sách vào bảng
+    function addBook() {
+        // Lấy giá trị mã sách và tên sách từ input
+        var maSach = document.getElementById('ms').value;
+        var tenSach = document.getElementById('searchString').value;
+
+        // Tạo một hàng mới trong bảng
+        var newRow = document.createElement('tr');
+
+        // Tạo các ô trong hàng mới
+        var tdMaSach = document.createElement('td');
+        var tdTenSach = document.createElement('td');
+        var tdHinhAnh = document.createElement('td');
+        var tdSoLuongMuon = document.createElement('td');
+
+        // Đặt nội dung cho các ô
+        tdMaSach.textContent = maSach;
+        tdTenSach.textContent = tenSach;
+        tdSoLuongMuon.textContent = "1"; // Giả sử số lượng mượn là 1
+         var baseImageUrl = '@baseImageUrl';
+        // Tạo một thẻ ảnh và đặt đường dẫn hình ảnh
+        var img = document.createElement('img');
+        var imageName = document.getElementById('imgSearch').value;
+        img.src = baseImageUrl + imageName;; // Đường dẫn ảnh mặc định
+        img.alt = "Hình ảnh";
+
+        // Đặt chiều rộng và chiều cao cho ảnh
+        img.style.width = "100px";
+        img.style.height = "auto";
+
+        // Thêm ảnh vào ô chứa hình ảnh
+        tdHinhAnh.appendChild(img);
+
+        // Thêm các ô vào hàng mới
+        newRow.appendChild(tdMaSach);
+        newRow.appendChild(tdTenSach);
+        newRow.appendChild(tdHinhAnh);
+        newRow.appendChild(tdSoLuongMuon);
+
+        // Thêm hàng mới vào bảng
+        var tableBody = document.querySelector('tbody');
+        tableBody.appendChild(newRow);
+    }
+
+    // Sự kiện click của nút "Thêm"
+    document.getElementById('addsach').addEventListener('click', addBook);
+</script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>

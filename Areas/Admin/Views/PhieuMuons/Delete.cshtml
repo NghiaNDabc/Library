@@ -1,0 +1,64 @@
+﻿@model QuanLySachThuVien.Models.PhieuMuon
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>PhieuMuon</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.NguoiDung.hoTen)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NguoiDung.hoTen)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ngayMuon)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ngayMuon)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ngayTra)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ngayTra)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tinhTrang)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tinhTrang)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>
