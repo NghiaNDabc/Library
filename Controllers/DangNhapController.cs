@@ -1,17 +1,25 @@
 ﻿using QuanLySachThuVien.Models;
+using System.Data.SqlClient;
+using System;
 using System.Linq;
+using System.Web.Configuration;
 using System.Web.Mvc;
 
 namespace QuanLySachThuVien.Areas.Admin.Controllers
 {
     public class DangNhapController : Controller
     {
+        QuanLySachThuVienContext db = new QuanLySachThuVienContext();
         public ActionResult DangXuat()
         {
-            Session["taikhoan"] = null;
-            return RedirectToAction("DangNhap");
+            Session["NguoiDung"] = null;
+            return Redirect("/TrangChu/Index");
         }
         public ActionResult TaiKhoanCuaToi()
+        {
+            return View();
+        }
+        public ActionResult DangKy()
         {
             return View();
         }
@@ -19,18 +27,44 @@ namespace QuanLySachThuVien.Areas.Admin.Controllers
         {
             return View();
         }
+
+        //Tạo ID mới
+        public string IncrementId(string currentID)
+        {
+            // Tìm vị trí đầu tiên của chữ số trong chuỗi
+            int firstNumIndex = -1;
+            for (int i = 0; i < currentID.Length; i++)
+            {
+                if (char.IsDigit(currentID[i]))
+                {
+                    firstNumIndex = i;
+                    break;
+                }
+            }
+
+            // Nếu không tìm thấy chữ số nào, trả về chuỗi gốc
+            if (firstNumIndex == -1)
+            {
+                throw new ArgumentException("Input string does not contain a numeric part.");
+            }
+
+            // Tách phần chữ và phần số
+            string letterPart = currentID.Substring(0, firstNumIndex);
+            string numberPart = currentID.Substring(firstNumIndex);
+
+            // Tăng phần số lên 1
+            int number = int.Parse(numberPart);
+            number++;
+
+            // Ghép phần chữ và phần số đã tăng
+            string newId = letterPart + number.ToString(new string('0', numberPart.Length));
+
+            return newId;
+        }
         [HttpPost]
         public ActionResult DangNhap(string tenDangNhap, string matKhau)
         {
-            //Kiểm tra xem đã điền đủ tài khoản và mật khẩu chưa
-            if (string.IsNullOrEmpty(tenDangNhap) || string.IsNullOrEmpty(matKhau))
-            {
-                ViewBag.thongBao = "Vui lòng nhập đầy đủ thông tin !";
-                return View();
-            }
-
-            //Tìm tài khoản theo tên đăng nhập trong database
-            QuanLySachThuVienContext db = new QuanLySachThuVienContext();
+            //Tìm tài khoản theo tên đăng nhập trong database        
             var taiKhoan = db.TaiKhoans.SingleOrDefault(m => m.tenDangNhap == tenDangNhap);
 
             //Kiểm tra tài khoản tồn tại không
@@ -49,6 +83,10 @@ namespace QuanLySachThuVien.Areas.Admin.Controllers
                 return View();
             }
 
+            // Lưu tài khoản hiện tại vào Session
+            var nguoiDung = db.NguoiDungs.FirstOrDefault(m => m.maNguoiDung == taiKhoan.maNguoiDung);
+            Session["NguoiDung"] = nguoiDung;
+
             //Kiểm tra quyền và chuyển hướng sang trang admin/user
             if (taiKhoan.quyen == "admin")
             {
@@ -56,43 +94,72 @@ namespace QuanLySachThuVien.Areas.Admin.Controllers
             }
             else
             {
-                Session["taikhoan"] = taiKhoan;
                 return Redirect("/TrangChu/Index");
             }
         }
-        public ActionResult DangKy(string email, string hoten, string ngaySinh, string queQuan, string sdt, string tenDangNhap, string matKhau, string matKhaunl)
+
+        [HttpPost]
+        public ActionResult DangKy(string email, string hoTen, string ngaySinh, string queQuan, string sdt, string tenDangNhap, string matKhau, string matKhauNL)
         {
-            //Kiểm tra xem đã điền đủ thông tin
-            if (string.IsNullOrEmpty(tenDangNhap) || string.IsNullOrEmpty(matKhau)||string.IsNullOrEmpty(email)||
-                string.IsNullOrEmpty(hoten)||string.IsNullOrEmpty(queQuan)||string.IsNullOrEmpty(sdt)||string.IsNullOrEmpty(ngaySinh))
+            //Kiểm tra tài khoản đã tồn tại chưa
+            var taiKhoan = db.TaiKhoans.FirstOrDefault(m => m.tenDangNhap == tenDangNhap);
+            if (taiKhoan != null)
             {
-                ViewBag.thongBao = "Vui lòng nhập đầy đủ thông tin !";
+                ViewBag.thongBao = "Tài khoản đã tồn tại !";
                 return View();
             }
 
-            //Tìm tài khoản theo tên đăng nhập trong database
-            QuanLySachThuVienContext db = new QuanLySachThuVienContext();
-            var taiKhoan = db.TaiKhoans.SingleOrDefault(m => m.tenDangNhap == tenDangNhap);
-
-            //Kiểm tra tài khoản tồn tại không
-            if (taiKhoan == null)
+            //Kiểm tra mật khẩu nhập lại có chính xác không 
+            if (matKhau.Equals(matKhauNL) != true)
             {
-                ViewBag.thongBao = "Tài khoản hoặc mật khẩu không chính xác !";
-                //code Minh
-                if (matKhau != matKhaunl)
-                {
-                    ViewBag.thongBao = "Tài khoản hoặc mật khẩu không chính xác !";
-                    ViewBag.tenDangNhap = tenDangNhap;
-                    return View();
-                }
-                // xử lý để khi đăng ký xong thì chuyển qua đăng nhập
-            }
-            else
-            {
-                ViewBag.thongBao = "Tên đăng nhập đã tồn tại!";
+                ViewBag.thongBao = "Mật khẩu nhập lại không chính xác !";
                 return View();
             }
-            return View();
+
+            //Chuyển string ngaySinh sang dateTime
+            DateTime dateTime = DateTime.Parse(ngaySinh);
+
+            //Tạo mã người dùng mới 
+            string maNguoiDung = "ND001";
+
+            if (db.NguoiDungs.Any())
+            {
+                var nguoiDungMaxID = (from nguoidung in db.NguoiDungs
+                                      orderby nguoidung.maNguoiDung descending
+                                      select nguoidung).FirstOrDefault();
+                String maxIDNow = nguoiDungMaxID.maNguoiDung;
+                maNguoiDung = IncrementId(maxIDNow);
+            }
+
+            //Thêm vào csdl
+            string connectionString = WebConfigurationManager.ConnectionStrings["QuanLySachThuVienContext"].ConnectionString;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query1 = "INSERT INTO NguoiDung VALUES (@HoTen, @NgaySinh, @QueQuan, @Email, @SDT, @MaNguoiDung)";
+                SqlCommand cmd1 = new SqlCommand(query1, connection);
+                cmd1.Parameters.AddWithValue("@HoTen", hoTen);
+                cmd1.Parameters.AddWithValue("@NgaySinh", dateTime);
+                cmd1.Parameters.AddWithValue("@QueQuan", queQuan);
+                cmd1.Parameters.AddWithValue("@Email", email);
+                cmd1.Parameters.AddWithValue("@SDT", sdt);
+                cmd1.Parameters.AddWithValue("@MaNguoiDung", maNguoiDung);
+
+                string query2 = "INSERT INTO TaiKhoan VALUES(@TenDangNhap, @MatKhau, @Quyen, @MaNguoiDung)";
+                SqlCommand cmd2 = new SqlCommand(query2, connection);
+                cmd2.Parameters.AddWithValue("@TenDangNhap", tenDangNhap);
+                cmd2.Parameters.AddWithValue("@MatKhau", matKhau);
+                cmd2.Parameters.AddWithValue("@Quyen", "user");
+                cmd2.Parameters.AddWithValue("@MaNguoiDung", maNguoiDung);
+
+                connection.Open();
+                cmd1.ExecuteNonQuery();
+                cmd2.ExecuteNonQuery();
+            }
+
+            var nguoiDung = db.NguoiDungs.SingleOrDefault(m => m.maNguoiDung == maNguoiDung);
+            Session["NguoiDung"] = nguoiDung;
+            return Redirect("/TrangChu/Index");
         }
 
     }

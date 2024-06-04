@@ -1,4 +1,9 @@
 ﻿@using QuanLySachThuVien.Models
+
+@{
+    var nguoiDungNow = (QuanLySachThuVien.Models.NguoiDung)System.Web.HttpContext.Current.Session["NguoiDung"];
+}
+
 <!DOCTYPE html>
 
 <html>
@@ -9,7 +14,6 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <style>
-
         /* Kiểu cho các mục dropdown */
         .dropdown {
             position: relative;
@@ -56,11 +60,8 @@
         }
 
         .navbar a:hover, .dropdown:hover .dropbtn {
-            color: darkblue;
-        }
-
-        .dropdown-content a:hover {
-            text-decoration: underline;
+            background-color: #ddd;
+            color: black;
         }
 
         footer p {
@@ -122,29 +123,21 @@
                 <li style="margin: 0px 10px">@Html.ActionLink("Giới thiệu", "About", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
                 <li style="margin: 0px 10px">@Html.ActionLink("Quy định", "QuyDinh", "TrangChu", new { area = "" }, new { @class = "nav-link" })</li>
                 <li style="margin: 0px 10px">@Html.ActionLink("Giỏ sách", "XemGioHang", "GioHang", new { area = "" }, new { @class = "nav-link" })</li>
-                @{
-                    if (Session["taikhoan"] == null)
-                    {
-                        <li style="margin: 0px 10px">@Html.ActionLink("Đăng nhập", "DangNhap", "DangNhap", new { area = "" }, new { @class = "nav-link" })</li>
-
-                    }
-                    else
-                    {
-                        TaiKhoan tk = (TaiKhoan)Session["taikhoan"];
-                        NguoiDung nd = db.NguoiDungs.SingleOrDefault(n => n.maNguoiDung == tk.maNguoiDung);
-                        <li style="margin: 0 10px" class="nav-item" >
-                            <div class="dropdown">
-                                <a href="#" class="dropbtn nav-link" style="color: darkblue;">@nd.hoTen</a>
-                                <div class="dropdown-content">
-                                    <a href="@Url.Action("DangXuat", "DangNhap")">Đăng xuất</a>
-                                    <a href="@Url.Action("TaiKhoanCuaToi", "DangNhap")">Tài khoản của tôi</a>
-                                </div>
+                @if (Session["NguoiDung"] == null)
+                {
+                    <li style="margin: 0px 10px">@Html.ActionLink("Đăng nhập", "DangNhap", "DangNhap", new { area = "" }, new { @class = "nav-link" })</li>
+                }
+                else
+                {
+                    <li style="margin: 0px 10px" class="nav-item">
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn nav-link">Xin chào @nguoiDungNow.hoTen !</a>
+                            <div class="dropdown-content">
+                                <a href="#">Tài khoản của tôi</a>
+                                <a href="@Url.Action("DangXuat", "DangNhap")">Đăng xuất</a>
                             </div>
-                        </li>
-
-                    }
-
-
+                        </div>
+                    </li>
                 }
 
             </ul>

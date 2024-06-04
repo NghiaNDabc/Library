@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    var nguoiDungNow = (QuanLySachThuVien.Models.NguoiDung)System.Web.HttpContext.Current.Session["NguoiDung"];
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -58,6 +63,60 @@
                 vertical-align: middle;
                 color: #0056b3;
             }
+
+        /* Kiểu cho các mục dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Kiểu cho menu dropdown */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 6px;
+        }
+
+            /* Kiểu cho các mục trong menu dropdown */
+            .dropdown-content a {
+                color: black;
+                margin: 0;
+                padding: 10px;
+                width: 200px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+        /* Hiển thị menu dropdown khi di chuột vào */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Hiển thị submenu khi di chuột vào mục con */
+        .dropdown-submenu:hover .dropdown-content {
+            display: block;
+            left: 100%;
+            top: 0;
+        }
+
+        /* Đảm bảo submenu nằm ngang bên phải của mục chính */
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #00ACE8;
+            color: #fff;
+        }
+
+        .dropdown-content > a {
+            border-radius: 6px;
+        }
     </style>
 </head>
 
@@ -68,9 +127,19 @@
                 <img src="~/Content/Images/logo-haui.png" width="50" style="margin-right: 10px;" />
                 <span>Thư viện sách HaUI</span>
             </div>
-            <a href="#" >Trang chủ</a>
+            <a href="#">Trang chủ</a>
             @Html.ActionLink("Bảo trì danh mục", "Index", "Baotridanhmuc")
             @Html.ActionLink("Bảo trì sách", "Index", "Baotrisach")
+            @if (Session["NguoiDung"] != null)
+            {
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Xin chào @nguoiDungNow.hoTen !</a>
+                    <div class="dropdown-content">
+                        <a href="#">Tài khoản của tôi</a>
+                        <a href="@Url.Action("DangXuat", "DangNhap")">Đăng xuất</a>
+                    </div>
+                </div>
+            }
         </div>
         <div>
             @RenderBody();

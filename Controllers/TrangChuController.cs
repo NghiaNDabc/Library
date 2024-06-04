@@ -19,11 +19,6 @@ namespace QuanLySachThuVien.Controllers
         // GET: Saches
         public ActionResult Index(string key)
         {
-            TaiKhoan tk = (TaiKhoan)Session["taikhoan"];
-            if (tk == null)
-            {
-                return Redirect("/DangNhap/DangNhap");
-            }
             var saches = db.Saches.Include(s => s.DanhMuc);
 
             return View(saches.ToList());
