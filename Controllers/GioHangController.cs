@@ -22,7 +22,7 @@ namespace QuanLySachThuVien.Controllers
         public List<ChiTietGioHang> LayGioHang()
         {
 
-            TaiKhoan tk = (TaiKhoan)Session["taikhoan"];
+            TaiKhoan tk = (TaiKhoan)Session["NguoiDung"];
             GioHang gioHang = db.GioHangs.FirstOrDefault(g => g.maNguoiDung == tk.maNguoiDung);
             if (gioHang == null)
             {

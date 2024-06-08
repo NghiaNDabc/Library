@@ -4,6 +4,8 @@ using System;
 using System.Linq;
 using System.Web.Configuration;
 using System.Web.Mvc;
+using System.Data.Entity;
+using System.Net;
 
 namespace QuanLySachThuVien.Areas.Admin.Controllers
 {
@@ -15,10 +17,6 @@ namespace QuanLySachThuVien.Areas.Admin.Controllers
             Session["NguoiDung"] = null;
             return Redirect("/TrangChu/Index");
         }
-        public ActionResult TaiKhoanCuaToi()
-        {
-            return View();
-        }
         public ActionResult DangKy()
         {
             return View();
@@ -26,6 +24,12 @@ namespace QuanLySachThuVien.Areas.Admin.Controllers
         public ActionResult DangNhap()
         {
             return View();
+        }
+        [HttpGet]
+        public ActionResult TaiKhoanCuaToi()
+        {
+            var model = Session["NguoiDung"];
+            return View(model);
         }
 
         //Tạo ID mới
@@ -162,6 +166,23 @@ namespace QuanLySachThuVien.Areas.Admin.Controllers
             return Redirect("/TrangChu/Index");
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult TaiKhoanCuaToi([Bind(Include = "maNguoiDung, email, hoTen, ngaySinh, queQuan, sdt")] NguoiDung nguoiDung)
+        {
+            DateTime dateTime = DateTime.Parse((string)Request.Form["ngaySinh"]);
+            nguoiDung.ngaySinh = dateTime;
+            if (ModelState.IsValid)
+            {
+                db.Entry(nguoiDung).State = EntityState.Modified;
+                db.SaveChanges();
+                ViewBag.thongBao = "Cập nhật thông tin thành công !";
+                Session["NguoiDung"] = nguoiDung;
+                return View(nguoiDung);
+            }
+            ViewBag.thongBao = "Chua duoc cap nhat";
+            return View(nguoiDung);
+        }
     }
 
 }
