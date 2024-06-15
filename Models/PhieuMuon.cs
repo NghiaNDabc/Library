@@ -17,15 +17,15 @@ namespace QuanLySachThuVien.Models
         }
 
         [Key]
-        [MaxLength(10)]
-        public byte[] maPhieuMuon { get; set; }
+        [StringLength(10)]
+        public string maPhieuMuon { get; set; }
 
         [Required]
         [StringLength(10)]
         public string maNguoiDung { get; set; }
-
+        [DataType(DataType.Date)]
         public DateTime? ngayMuon { get; set; }
-
+        [DataType(DataType.Date)]
         public DateTime? ngayTra { get; set; }
 
         [StringLength(50)]

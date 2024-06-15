@@ -11,8 +11,8 @@ namespace QuanLySachThuVien.Models
     {
         [Key]
         [Column(Order = 0)]
-        [MaxLength(10)]
-        public byte[] maPhieuMuon { get; set; }
+        [StringLength(10)]
+        public string maPhieuMuon { get; set; }
 
         [Key]
         [Column(Order = 1)]
