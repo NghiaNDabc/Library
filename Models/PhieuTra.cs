@@ -20,8 +20,8 @@ namespace QuanLySachThuVien.Models
         public string maPhieuTra { get; set; }
 
         [Required]
-        [MaxLength(10)]
-        public byte[] maPhieuMuon { get; set; }
+        [StringLength(10)]
+        public string maPhieuMuon { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietPhieuTra> ChiTietPhieuTras { get; set; }
