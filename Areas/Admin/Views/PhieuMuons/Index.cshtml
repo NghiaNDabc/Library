@@ -1,0 +1,67 @@
+﻿@model IEnumerable<QuanLySachThuVien.Models.PhieuMuon>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<meta charset="UTF-8">
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.soluong</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Tạo phiếu mượn mới", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                Người mượn
+            </th>
+            <th>
+                Mã phiếu mượn
+            </th>
+            <th>
+               Ngày mượn
+            </th>
+            <th>
+                Ngày trả
+            </th>
+            <th>
+                Tình trạng
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NguoiDung.hoTen)
+                </td>
+                <td>
+                    @item.maPhieuMuon
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ngayMuon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ngayTra)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tinhTrang)
+                </td>
+                <td>
+                    @Html.ActionLink("Sửa", "Edit", new { id = item.maPhieuMuon.Trim() }) |
+                    @Html.ActionLink("Chi tiết", "Details", new { id = item.maPhieuMuon }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.maPhieuMuon })
+                </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>

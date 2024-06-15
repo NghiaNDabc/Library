@@ -1,0 +1,58 @@
+﻿@model QuanLySachThuVien.Models.PhieuMuon
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>PhieuMuon</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.NguoiDung.hoTen)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.NguoiDung.hoTen)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ngayMuon)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ngayMuon)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ngayTra)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ngayTra)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.tinhTrang)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.tinhTrang)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.maPhieuMuon }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
